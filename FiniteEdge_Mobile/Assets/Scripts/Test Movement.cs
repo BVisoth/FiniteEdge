@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class TestMovement : MonoBehaviour
 {
+    public GameObject Square;
+
     // Start is called before the first frame update
-    void Start()
+    void MoveLeft()
     {
         
     }
 
     // Update is called once per frame
-    void Update()
+    void MoveRight()
     {
         
     }
