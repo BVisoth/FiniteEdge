@@ -9,32 +9,32 @@ public class Inst_Test : MonoBehaviour
     public Transform Location;
     public float counter;
     public int ran;
+
     void Update()
     {
-       
+        counter += Time.deltaTime;
+        if (counter >= 1)
+        {
+            counter = 0;
+            ran = BossPreset.ran1;
 
-    }
-
-    public void Shoot()
-    {
-        counter = 0;
-        ran = Random.Range(1, 5);
-
-        if (ran == 1)
-        {
-            leftleft();
-        }
-        else if (ran == 2)
-        {
-            left();
-        }
-        else if (ran == 3)
-        {
-            right();
-        }
-        else if (ran == 4)
-        {
-            rightright();
+            if (ran == 1)
+            {
+                leftleft();
+            }
+            else if (ran == 2)
+            {
+                left();
+            }
+            else if (ran == 3)
+            {
+                right();
+            }
+            else if (ran == 4)
+            {
+                rightright();
+            }
+           
         }
 
     }
