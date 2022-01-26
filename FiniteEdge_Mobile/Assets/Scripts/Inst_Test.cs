@@ -11,27 +11,30 @@ public class Inst_Test : MonoBehaviour
     public int ran;
     void Update()
     {
-        counter += Time.deltaTime;
-        if (counter >= 1)
+       
+
+    }
+
+    public void Shoot()
+    {
+        counter = 0;
+        ran = Random.Range(1, 5);
+
+        if (ran == 1)
         {
-            ran = Random.Range(1, 4);
-            counter = 0;
-            if (ran == 1)
-            {
-                leftleft();
-            }
-            else if (ran == 2)
-            {
-                left();
-            }
-            else if (ran == 3)
-            {
-                right();
-            }
-            else if (ran == 4)
-            {
-                rightright();
-            }
+            leftleft();
+        }
+        else if (ran == 2)
+        {
+            left();
+        }
+        else if (ran == 3)
+        {
+            right();
+        }
+        else if (ran == 4)
+        {
+            rightright();
         }
 
     }

@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: afd828ba022ff5a48a45c90c6a7c9bc6
+guid: 58399ece35c07d443ad13ea50cdd3758
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 868679579686336697
-    second: Big man idle_0
+      213: 4242197221839893482
+    second: Big man idle fixed_0
   - first:
-      213: -6440504915785084245
-    second: Big man idle_1
+      213: -2217599700618413780
+    second: Big man idle fixed_1
   - first:
-      213: -6321220747109774963
-    second: Big man idle_2
+      213: -7310892657769359109
+    second: Big man idle fixed_2
   - first:
-      213: 1605101859455069894
-    second: Big man idle_3
+      213: -6726054171430954306
+    second: Big man idle fixed_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Big man idle_0
+      name: Big man idle fixed_0
       rect:
         serializedVersion: 2
         x: 0
@@ -117,14 +117,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b8f6daa97b2e0c00800000000000000
-      internalID: 868679579686336697
+      spriteID: ae37aeaa5ef4fda30800000000000000
+      internalID: 4242197221839893482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big man idle_1
+      name: Big man idle fixed_1
       rect:
         serializedVersion: 2
         x: 32
@@ -138,14 +138,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba2197007eabe96a0800000000000000
-      internalID: -6440504915785084245
+      spriteID: c2970a652d08931e0800000000000000
+      internalID: -2217599700618413780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big man idle_2
+      name: Big man idle fixed_2
       rect:
         serializedVersion: 2
         x: 0
@@ -159,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8941b5c8338648a0800000000000000
-      internalID: -6321220747109774963
+      spriteID: bf855aeccdd7a8a90800000000000000
+      internalID: -7310892657769359109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Big man idle_3
+      name: Big man idle fixed_3
       rect:
         serializedVersion: 2
         x: 32
@@ -180,8 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ce632113a7764610800000000000000
-      internalID: 1605101859455069894
+      spriteID: ebad2d30e5148a2a0800000000000000
+      internalID: -6726054171430954306
       vertices: []
       indices: 
       edges: []
