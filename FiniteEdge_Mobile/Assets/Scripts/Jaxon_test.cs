@@ -4,38 +4,28 @@ using UnityEngine;
 
 public class Jaxon_test : MonoBehaviour
 {
-    // Set your parameters in the Inspector.
-    public float waitSeconds = 60f;
-    public Vector3 targetOffset = Vector3.forward * 10f;
-    public float speed = 1f;
 
-    // Make Start a coroutine that begins 
-    // as soon as our object is enabled.
-    IEnumerator Start()
+    // Update is called once per frame
+    void Update()
     {
 
-        // First, wait our defined duration.
-        yield return new WaitForSeconds(waitSeconds);
-
-        // Then, pick our destination point offset from our current location.
-        Vector3 targetPosition = transform.position + targetOffset;
-
-        // Loop until we're within Unity's vector tolerance of our target.
-        while (transform.position != targetPosition)
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-
-            // Move one step toward the target at our given speed.
-            transform.position = Vector3.MoveTowards(
-                  transform.position,
-                  targetPosition,
-                  speed * Time.deltaTime
-             );
-
-            // Wait one frame then resume the loop.
-            yield return null;
+            GetComponent<Rigidbody2D>().velocity = new Vector2(40, 0);
         }
 
-        // We have arrived. Ensure we hit it exactly.
-        transform.position = targetPosition;
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(-40, 0);
+        }
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Stopper")
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        }
     }
 }
