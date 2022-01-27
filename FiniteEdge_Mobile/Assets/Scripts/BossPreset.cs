@@ -17,6 +17,7 @@ public class BossPreset : MonoBehaviour
     public bool atimecheck;
     public bool scountcheck;
     [SerializeField] static public int bigmanhealth;
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,7 @@ public class BossPreset : MonoBehaviour
         if (scount > 0)
         {
             Shoot();
+            animator.SetInteger("Anim", 2);
         }
         else
         {
@@ -38,6 +40,7 @@ public class BossPreset : MonoBehaviour
                 atime = atimeset / singleton.diA;
                 atimecheck = true;
                 scountcheck = false;
+              
             }
                
 
@@ -45,6 +48,7 @@ public class BossPreset : MonoBehaviour
         }
         if (atime > 0)
         {
+            animator.SetInteger("Anim", 1);
             acounter += Time.deltaTime;
             if (acounter >= 1)
             {
@@ -59,6 +63,7 @@ public class BossPreset : MonoBehaviour
                 scount = sscount * singleton.diA;
                 scountcheck = true;
                 atimecheck = false;
+                
             }
 
 
