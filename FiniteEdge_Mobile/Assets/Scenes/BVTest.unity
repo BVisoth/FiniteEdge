@@ -333,7 +333,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48760730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.0513, y: 3.4802, z: 0}
+<<<<<<< Updated upstream
+  m_LocalPosition: {x: 11.24, y: -7.78, z: 0}
+=======
+  m_LocalPosition: {x: 13.02, y: 3.06, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 5.000956, y: 4.058521, z: 0.043388102}
   m_Children: []
   m_Father: {fileID: 0}
@@ -415,7 +419,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222018564}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.12, y: 3.48, z: 0}
+<<<<<<< Updated upstream
+  m_LocalPosition: {x: -9.02, y: 8.12, z: 0}
+=======
+  m_LocalPosition: {x: 13.14, y: -1.18, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 4.858599, y: 4.078915, z: 0.043388102}
   m_Children: []
   m_Father: {fileID: 0}
@@ -564,7 +572,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 314054713}
-  - component: {fileID: 314054714}
   m_Layer: 0
   m_Name: Point 4
   m_TagString: Untagged
@@ -586,22 +593,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &314054714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 314054712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baa6d25af15bbb643a41379c19041d7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ball: {fileID: 855425269}
-  Location: {fileID: 314054713}
-  counter: 0
-  ran: 0
 --- !u!1 &423736293
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,7 +824,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 721266523}
-  - component: {fileID: 721266524}
   m_Layer: 0
   m_Name: Point 2
   m_TagString: Untagged
@@ -855,22 +845,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &721266524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721266522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baa6d25af15bbb643a41379c19041d7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ball: {fileID: 855425269}
-  Location: {fileID: 721266523}
-  counter: 0
-  ran: 0
+<<<<<<< Updated upstream
+=======
 --- !u!1 &855425269
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,7 +946,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855425269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.49695504, y: 4.2, z: 0}
+  m_LocalPosition: {x: -11.59, y: -1.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -992,6 +968,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+>>>>>>> Stashed changes
 --- !u!1 &958330001
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,7 +1099,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 989273612}
-  - component: {fileID: 989273613}
   m_Layer: 0
   m_Name: Point 1
   m_TagString: Untagged
@@ -1144,6 +1120,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!114 &989273613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1153,13 +1130,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 989273611}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baa6d25af15bbb643a41379c19041d7e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d59b372e1b298c45a3672452b2774b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 855425269}
-  Location: {fileID: 989273612}
-  counter: 0
-  ran: 0
+  pos: []
+  ball: {fileID: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1177996745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1236,11 +1213,64 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177996745}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.57, y: 3.48, z: 0}
+<<<<<<< Updated upstream
+  m_LocalPosition: {x: -16.19, y: 2.71, z: 0}
+=======
+  m_LocalPosition: {x: -4.47, y: 7.33, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 4.858599, y: 4.078915, z: 0.043388102}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1480025110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1480025112}
+  - component: {fileID: 1480025111}
+  m_Layer: 0
+  m_Name: Inst_Test_Script
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1480025111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480025110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d59b372e1b298c45a3672452b2774b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos:
+  - {fileID: 989273612}
+  - {fileID: 721266523}
+  - {fileID: 1515279016}
+  - {fileID: 314054713}
+  ball: {fileID: 8554799915116431923, guid: 89ff3d64597573b43a80ca55d70cf06b, type: 3}
+--- !u!4 &1480025112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480025110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1515279015
 GameObject:
@@ -1251,7 +1281,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1515279016}
-  - component: {fileID: 1515279017}
   m_Layer: 0
   m_Name: Point 3
   m_TagString: Untagged
@@ -1273,22 +1302,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1515279017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515279015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baa6d25af15bbb643a41379c19041d7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ball: {fileID: 855425269}
-  Location: {fileID: 1515279016}
-  counter: 0
-  ran: 0
 --- !u!1 &1657352973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1397,7 +1410,7 @@ Transform:
   m_LocalScale: {x: 1.6005, y: 1.6005, z: 1.6005}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1657352977
 MonoBehaviour:
@@ -1422,6 +1435,7 @@ GameObject:
   - component: {fileID: 1989214349}
   - component: {fileID: 1989214348}
   - component: {fileID: 1989214347}
+  - component: {fileID: 1989214350}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1477,6 +1491,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1989214350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989214346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86f26295f44ad943be62fad92701872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 0
+  apple: 0
+  positions:
+  - {fileID: 989273612}
+  - {fileID: 721266523}
+  - {fileID: 1515279016}
+  - {fileID: 314054713}
+  ball: {fileID: 855425269}
 --- !u!1 &2021568072
 GameObject:
   m_ObjectHideFlags: 0
@@ -1553,7 +1587,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021568072}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.71, y: 3.48, z: 0}
+<<<<<<< Updated upstream
+  m_LocalPosition: {x: -16.75, y: -2.63, z: 0}
+=======
+  m_LocalPosition: {x: 7.22, y: 7.19, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 4.858599, y: 4.078915, z: 0.043388102}
   m_Children: []
   m_Father: {fileID: 0}
