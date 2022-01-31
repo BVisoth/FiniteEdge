@@ -12,6 +12,11 @@ public class Hp_Test : MonoBehaviour
 
     private void Start()
     {
+        currentHp = 3;
+    }
+
+    private void Update()
+    {
         hpText.text = "Current Hp: " + currentHp;
     }
 
