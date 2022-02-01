@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class BossHp_Test : MonoBehaviour
 {
     public static int Hp = 100;
-    public Canvas canvas;
+    public float HitPoints;
+    public float MaxHitpoints = 5;
+    public HpBar_Test hpBar;
 
     private void Start()
     {
