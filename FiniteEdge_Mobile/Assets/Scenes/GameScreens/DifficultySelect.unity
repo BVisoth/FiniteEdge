@@ -415,5 +415,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2796999111377940888, guid: 8f37333a04b665540817db71f33b0a68, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8760234525589735323}
+    - target: {fileID: 2796999111377940888, guid: 8f37333a04b665540817db71f33b0a68, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadStartScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2796999111377940888, guid: 8f37333a04b665540817db71f33b0a68, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f37333a04b665540817db71f33b0a68, type: 3}
+--- !u!114 &8760234525589735323 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2727276224222498167, guid: 8f37333a04b665540817db71f33b0a68, type: 3}
+  m_PrefabInstance: {fileID: 8760234525589735322}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac03ec83da48e7446a36026dc51144e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
