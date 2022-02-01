@@ -515,6 +515,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: VictoryCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5537278775777763161, guid: e0da175e5266be848942b0e8e36e823c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5537278775777763161, guid: e0da175e5266be848942b0e8e36e823c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5537278775777763161, guid: e0da175e5266be848942b0e8e36e823c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 134.52002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5537278775777763161, guid: e0da175e5266be848942b0e8e36e823c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -38
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0da175e5266be848942b0e8e36e823c, type: 3}
 --- !u!1 &4568522571243316258 stripped
