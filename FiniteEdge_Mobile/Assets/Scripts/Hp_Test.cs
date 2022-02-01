@@ -22,9 +22,12 @@ public class Hp_Test : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        currentHp -= 1;
-        Debug.Log("Current Hp: " + currentHp);
-        hpText.text = "Current Hp: " + currentHp;
+        if (other.gameObject.tag == "Projectile")
+        {
+            currentHp -= 1;
+            Debug.Log("Current Hp: " + currentHp);
+            hpText.text = "Current Hp: " + currentHp;
+        }
 
         if(currentHp <= 0)
         {
