@@ -8,11 +8,22 @@ public class Hp_Test : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI hpText;
 
-    public static int currentHp = 3;
+    public static int currentHp = 5;
 
     private void Start()
     {
-        currentHp = 3;
+        if (Dif_Test.easy == true)
+        {
+            currentHp = 7;
+        }
+        else if (Dif_Test.hard == true)
+        {
+            currentHp = 3;
+        }
+        else
+        {
+            currentHp = 5;
+        }
     }
 
     private void Update()
