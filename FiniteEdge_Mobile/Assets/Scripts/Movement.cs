@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jaxon_test : MonoBehaviour
+public class Movement : MonoBehaviour
 {
 
     // Update is called once per frame
