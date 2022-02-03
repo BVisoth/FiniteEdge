@@ -18,10 +18,10 @@ public class BossHp_Test : MonoBehaviour
 
     public void Update()
     {
-        hpBar.SetHealth(HitPoints, MaxHitpoints);
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             HitPoints -= 10;
+            hpBar.SetHealth(HitPoints, MaxHitpoints);
             Debug.Log("Current Hp: " + HitPoints);
         }
     }
