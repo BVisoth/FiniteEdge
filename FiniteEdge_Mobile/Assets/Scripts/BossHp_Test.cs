@@ -26,6 +26,7 @@ public class BossHp_Test : MonoBehaviour
             HitPoints -= 10;
             hpBar.SetHealth(HitPoints, MaxHitpoints);
             Debug.Log("Current Hp: " + HitPoints);
+            animator.SetInteger("Anim", 1);
 
             if (HitPoints <= 0)
             {
