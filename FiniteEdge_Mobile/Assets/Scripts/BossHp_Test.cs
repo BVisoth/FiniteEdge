@@ -22,6 +22,7 @@ public class BossHp_Test : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
+            animator.SetInteger("Anim", 3);
             HitPoints -= 10;
             hpBar.SetHealth(HitPoints, MaxHitpoints);
             Debug.Log("Current Hp: " + HitPoints);
