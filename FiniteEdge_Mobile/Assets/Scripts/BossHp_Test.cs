@@ -5,20 +5,24 @@ using UnityEngine.UI;
 
 public class BossHp_Test : MonoBehaviour
 {
-    public static int Hp = 100;
-    public Canvas canvas;
+    public float HitPoints;
+    public float MaxHitpoints = 5;
+    public HpBar_Test hpBar;
 
-    private void Start()
+    public void Start()
     {
-        Debug.Log("Current Hp: " + Hp);
+        HitPoints = MaxHitpoints;
+        hpBar.SetHealth(HitPoints, MaxHitpoints);
+        Debug.Log("Current Hp: " + HitPoints);
     }
 
-    private void Update()
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            Hp -= 10;
-            Debug.Log("Current Hp: " + Hp);
+            HitPoints -= 10;
+            hpBar.SetHealth(HitPoints, MaxHitpoints);
+            Debug.Log("Current Hp: " + HitPoints);
         }
     }
 }
