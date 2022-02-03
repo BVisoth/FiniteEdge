@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BossHp_Test : MonoBehaviour
 {
@@ -18,11 +19,16 @@ public class BossHp_Test : MonoBehaviour
 
     public void Update()
     {
-        hpBar.SetHealth(HitPoints, MaxHitpoints);
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             HitPoints -= 10;
+            hpBar.SetHealth(HitPoints, MaxHitpoints);
             Debug.Log("Current Hp: " + HitPoints);
+            if(HitPoints <= 0)
+            {
+                int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+                SceneManager.LoadScene(currentSceneIndex + 1);
+            }
         }
     }
 }
