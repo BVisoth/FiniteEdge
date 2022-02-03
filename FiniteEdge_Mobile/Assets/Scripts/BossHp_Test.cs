@@ -9,6 +9,7 @@ public class BossHp_Test : MonoBehaviour
     public float HitPoints;
     public float MaxHitpoints = 100;
     public HpBar_Test hpBar;
+    public Animator animator;
 
     public void Start()
     {
@@ -25,7 +26,7 @@ public class BossHp_Test : MonoBehaviour
             hpBar.SetHealth(HitPoints, MaxHitpoints);
             Debug.Log("Current Hp: " + HitPoints);
 
-            if(HitPoints <= 0)
+            if (HitPoints <= 0)
             {
                 Destroy(gameObject);
                 SceneManager.LoadScene(5);
