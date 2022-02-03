@@ -395,6 +395,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+--- !u!114 &924571767 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7430182850209218664, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+  m_PrefabInstance: {fileID: 924571766}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ee88f5d24cf5c43974f2edc92f0409, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1119940159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -666,6 +677,21 @@ MonoBehaviour:
   atimecheck: 0
   scountcheck: 0
   animator: {fileID: 1916926338}
+--- !u!114 &1916926340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916926337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb401ccb5184904f8c655ad063d8b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HitPoints: 0
+  MaxHitpoints: 100
+  hpBar: {fileID: 924571767}
 --- !u!1001 &2071592240
 PrefabInstance:
   m_ObjectHideFlags: 0
