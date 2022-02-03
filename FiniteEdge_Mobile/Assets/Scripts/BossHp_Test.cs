@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class BossHp_Test : MonoBehaviour
 {
     public float HitPoints;
-    public float MaxHitpoints = 5;
+    public float MaxHitpoints = 100;
     public HpBar_Test hpBar;
 
     public void Start()
@@ -24,10 +24,11 @@ public class BossHp_Test : MonoBehaviour
             HitPoints -= 10;
             hpBar.SetHealth(HitPoints, MaxHitpoints);
             Debug.Log("Current Hp: " + HitPoints);
+
             if(HitPoints <= 0)
             {
-                int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-                SceneManager.LoadScene(currentSceneIndex + 1);
+                Destroy(gameObject);
+                SceneManager.LoadScene(5);
             }
         }
     }
