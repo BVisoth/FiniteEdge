@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScreens/DifficultySelect.unity
     guid: 1e7d269dcb1a18946a08e887f13e6183
   - enabled: 1
+    path: Assets/Scenes/GameScreens/Tutorial.unity
+    guid: 0db7f412618c33c4fae44303c6f58ab9
+  - enabled: 1
     path: Assets/Scenes/BVTest.unity
     guid: cfdd624bd99185348b0f394622e19be9
   - enabled: 1
