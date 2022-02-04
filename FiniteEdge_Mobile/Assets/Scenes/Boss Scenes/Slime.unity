@@ -314,6 +314,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7430182849792207926, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 8.331116
+      objectReference: {fileID: 0}
     - target: {fileID: 7430182850209218663, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_Name
       value: Boss_Hp
@@ -479,6 +483,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1533668433, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1808541864}
+    - target: {fileID: 1533668436, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
+      propertyPath: hpText
+      value: 
+      objectReference: {fileID: 1870339681}
     - target: {fileID: 5478091236783605361, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -648,6 +660,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 384e4241fbdfaf240bf601fdb6379e7f, type: 3}
+--- !u!95 &1808541864 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5478091236783605360, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
+  m_PrefabInstance: {fileID: 1119940159}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1870339681 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1639706190, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+  m_PrefabInstance: {fileID: 924571766}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1916926336
 PrefabInstance:
   m_ObjectHideFlags: 0
