@@ -31,7 +31,7 @@ public class BossHp_Test : MonoBehaviour
             if (HitPoints <= 0)
             {
                 Destroy(gameObject);
-                SceneManager.LoadScene(5);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
     }
