@@ -492,6 +492,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1533668436, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
+      propertyPath: hpText
+      value: 
+      objectReference: {fileID: 2008973002}
     - target: {fileID: 5478091236783605361, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -793,6 +797,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34f1534358118d74c9b8c5fc8f2997bb, type: 3}
+--- !u!114 &2008973002 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1639706190, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+  m_PrefabInstance: {fileID: 380261067}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2043863604
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,6 +1009,7 @@ MonoBehaviour:
   HitPoints: 0
   MaxHitpoints: 100
   hpBar: {fileID: 380261068}
+  animator: {fileID: 2133927303}
 --- !u!1001 &8911268461481901177
 PrefabInstance:
   m_ObjectHideFlags: 0

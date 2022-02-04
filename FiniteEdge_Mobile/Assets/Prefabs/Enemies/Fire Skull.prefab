@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8979219796205145758}
   - component: {fileID: 8979219796205145745}
   - component: {fileID: 8979219796205145744}
+  - component: {fileID: 5204330998300151396}
+  - component: {fileID: 4737438913546754643}
   m_Layer: 0
   m_Name: Fire Skull
   m_TagString: Untagged
@@ -102,3 +104,43 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5204330998300151396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8979219796205145747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86f26295f44ad943be62fad92701872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 0
+  acounter: 0
+  apple: 0
+  positions: []
+  ball: {fileID: 4662371843245734208, guid: fab0bb582473f0a46ab5202f550a3ab5, type: 3}
+  atime: 0
+  atimeset: 3
+  sscount: 7
+  scount: 0
+  atimecheck: 0
+  scountcheck: 0
+  animator: {fileID: 0}
+--- !u!114 &4737438913546754643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8979219796205145747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb401ccb5184904f8c655ad063d8b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HitPoints: 0
+  MaxHitpoints: 100
+  hpBar: {fileID: 0}
+  animator: {fileID: 0}

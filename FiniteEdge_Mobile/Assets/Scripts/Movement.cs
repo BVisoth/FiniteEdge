@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public Animator animator;
 
     // Update is called once per frame
     void Update()
@@ -11,12 +12,16 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
+            animator.SetInteger("Anim", 2);
             GetComponent<Rigidbody2D>().velocity = new Vector2(40, 0);
+            
         }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
+            animator.SetInteger("Anim", 3);
             GetComponent<Rigidbody2D>().velocity = new Vector2(-40, 0);
+            
         }
 
     }
