@@ -5,26 +5,23 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public Animator animator;
+    public Rigidbody2D body;
 
-    // Update is called once per frame
-    void Update()
-    {
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        public void Right()
         {
             
-            GetComponent<Rigidbody2D>().velocity = new Vector2(40, 0);
+            body.velocity = new Vector2(40, 0);
             
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        public void Left()
         {
             
-            GetComponent<Rigidbody2D>().velocity = new Vector2(-40, 0);
+            body.velocity = new Vector2(-40, 0);
             
         }
 
-    }
     
     private void OnTriggerEnter2D(Collider2D other)
     {
