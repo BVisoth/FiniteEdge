@@ -42,7 +42,7 @@ public class Hp_Test : MonoBehaviour
 
         if(currentHp <= 0)
         {
-            SceneManager.LoadScene("GameOver1");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
