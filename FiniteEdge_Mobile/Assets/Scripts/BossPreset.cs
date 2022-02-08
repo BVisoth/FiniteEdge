@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossPreset : MonoBehaviour
 {
@@ -18,16 +19,37 @@ public class BossPreset : MonoBehaviour
     public bool scountcheck;
     [SerializeField] static public int bigmanhealth;
     public Animator animator;
+    public float HitPoints;
+    public float MaxHitpoints = 100;
+    public HpBar_Test hpBar;
+    public Animator animator2;
+
     // Start is called before the first frame update
     void Start()
     {
         atime = atimeset / singleton.diA;
+        HitPoints = MaxHitpoints;
+        hpBar.SetHealth(HitPoints, MaxHitpoints);
+        Debug.Log("Current Hp: " + HitPoints);
     }
 
     // Update is called once per frame
     void Update()
 
     {
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            HitPoints -= 10;
+            hpBar.SetHealth(HitPoints, MaxHitpoints);
+            Debug.Log("Current Hp: " + HitPoints);
+
+            if (HitPoints <= 0)
+            {
+                Destroy(gameObject);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+            }
+        }
+
         if (scount > 0)
         {
             Shoot();

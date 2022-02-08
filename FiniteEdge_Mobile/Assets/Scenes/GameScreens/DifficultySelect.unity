@@ -317,6 +317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1362496780}
   - component: {fileID: 1362496779}
+  - component: {fileID: 1362496781}
   m_Layer: 0
   m_Name: Diff
   m_TagString: Untagged
@@ -350,6 +351,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1362496781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362496778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d353d5bce5324469f5604400dbe30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1363939212
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,38 +613,38 @@ PrefabInstance:
     - target: {fileID: 2796999111632261497, guid: 8f37333a04b665540817db71f33b0a68, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1362496779}
+      objectReference: {fileID: 1362496781}
     - target: {fileID: 2796999111632261497, guid: 8f37333a04b665540817db71f33b0a68, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EasyModeOn
+      value: dif1
       objectReference: {fileID: 0}
     - target: {fileID: 2796999111632261497, guid: 8f37333a04b665540817db71f33b0a68, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Dif_Test, Assembly-CSharp
+      value: singleton, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8760234526483211934, guid: 8f37333a04b665540817db71f33b0a68, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1362496779}
+      objectReference: {fileID: 1362496781}
     - target: {fileID: 8760234526483211934, guid: 8f37333a04b665540817db71f33b0a68, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HardModeOn
+      value: dif3
       objectReference: {fileID: 0}
     - target: {fileID: 8760234526483211934, guid: 8f37333a04b665540817db71f33b0a68, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Dif_Test, Assembly-CSharp
+      value: singleton, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8760234526796935190, guid: 8f37333a04b665540817db71f33b0a68, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1362496779}
+      objectReference: {fileID: 1362496781}
     - target: {fileID: 8760234526796935190, guid: 8f37333a04b665540817db71f33b0a68, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadNextScene
+      value: dif2
       objectReference: {fileID: 0}
     - target: {fileID: 8760234526796935190, guid: 8f37333a04b665540817db71f33b0a68, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Dif_Test, Assembly-CSharp
+      value: singleton, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f37333a04b665540817db71f33b0a68, type: 3}
