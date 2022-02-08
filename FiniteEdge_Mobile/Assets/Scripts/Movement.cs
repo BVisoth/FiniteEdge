@@ -12,15 +12,14 @@ public class Movement : MonoBehaviour
         {
             
             body.velocity = new Vector2(40, 0);
-            
+            AudioSource.PlayClipAtPoint(dashSFX, Camera.main.transform.position);
         }
 
         public void Left()
         {
             
             body.velocity = new Vector2(-40, 0);
-
-        AudioSource.PlayClipAtPoint(dashSFX, new Vector3(0, 0, 0));
+            AudioSource.PlayClipAtPoint(dashSFX, Camera.main.transform.position);
         }
 
     

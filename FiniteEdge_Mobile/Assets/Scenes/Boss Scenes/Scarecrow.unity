@@ -525,6 +525,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 568141715}
     - target: {fileID: 1533668433, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
+      propertyPath: dashSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 98999801a510c7842893d85be7a25068, type: 3}
+    - target: {fileID: 1533668433, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 568141716}
@@ -807,6 +811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   body: {fileID: 0}
+  dashSFX: {fileID: 0}
 --- !u!4 &1860983156
 Transform:
   m_ObjectHideFlags: 0
@@ -1045,10 +1050,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 568141713}
-    - target: {fileID: 3824590344373101611, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
-      propertyPath: m_Color.a
-      value: 0.7058824
-      objectReference: {fileID: 0}
     - target: {fileID: 3824590344414466224, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1145,10 +1146,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 568141713}
-    - target: {fileID: 3824590345376018393, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
-      propertyPath: m_Color.a
-      value: 0.7058824
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
 --- !u!1001 &5263170510754456975
