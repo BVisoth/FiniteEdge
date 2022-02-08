@@ -24,6 +24,7 @@ public class BossPreset : MonoBehaviour
     public HpBar_Test hpBar;
     public bool hurting;
     public float htimer;
+    public static bool attk;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +39,10 @@ public class BossPreset : MonoBehaviour
     void Update()
 
     {
+        if (attk == true)
+        {
+            att();
+        }
         Skin();
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
@@ -45,10 +50,7 @@ public class BossPreset : MonoBehaviour
             //whenever the boss takes damage please set "hurting = true;" so boss plays the damage animation, Skin(); is what controls all boss animations
             //YOU SKINED THEM?!?!
 
-            HitPoints -= 10;
-            hurting = true;
-            hpBar.SetHealth(HitPoints, MaxHitpoints);
-            Debug.Log("Current Hp: " + HitPoints);
+           
 
             if (HitPoints <= 0)
             {
@@ -134,5 +136,14 @@ public class BossPreset : MonoBehaviour
             scount = scount - 1;
         }
     }
+    public void att()
+    {
+        HitPoints -= 10;
+        hurting = true;
+        hpBar.SetHealth(HitPoints, MaxHitpoints);
+        Debug.Log("Current Hp: " + HitPoints);
+        attk = false;
+    }
 }
+    
 

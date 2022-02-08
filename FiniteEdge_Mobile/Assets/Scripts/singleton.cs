@@ -23,7 +23,7 @@ public class singleton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        diA = 1;
+
     }
 
     // Update is called once per frame
@@ -34,17 +34,20 @@ public class singleton : MonoBehaviour
     public void dif1()
     {
         diA = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(2);
+        FindObjectOfType<Level>();
     }
     public void dif2()
     {
         diA = 2;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(2);
+        FindObjectOfType<Level>();
     }
     public void dif3()
     {
         diA = 3;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(2);
+        FindObjectOfType<Level>();
     }
 }
 
