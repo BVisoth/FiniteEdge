@@ -334,6 +334,11 @@ MonoBehaviour:
   atimecheck: 0
   scountcheck: 0
   animator: {fileID: 1682695378}
+  HitPoints: 0
+  MaxHitpoints: 100
+  hpBar: {fileID: 0}
+  hurting: 0
+  htimer: 0
 --- !u!1 &1783764254
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,7 +486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 910045394401596501, guid: 87e71a45c1e1a414380bc204be0fb728, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.72
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 910045394401596501, guid: 87e71a45c1e1a414380bc204be0fb728, type: 3}
       propertyPath: m_LocalPosition.y

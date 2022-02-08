@@ -22,6 +22,8 @@ public class BossPreset : MonoBehaviour
     public float HitPoints;
     public float MaxHitpoints = 100;
     public HpBar_Test hpBar;
+    public bool hurting;
+    public float htimer;
 
     // Start is called before the first frame update
     void Start()
@@ -36,9 +38,14 @@ public class BossPreset : MonoBehaviour
     void Update()
 
     {
+        Skin();
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
+
+            //whenever the boss takes damage please set "hurting = true;" so boss plays the damage animation, Skin(); is what controls all boss animations
+
             HitPoints -= 10;
+            hurting = true;
             hpBar.SetHealth(HitPoints, MaxHitpoints);
             Debug.Log("Current Hp: " + HitPoints);
 
@@ -52,7 +59,7 @@ public class BossPreset : MonoBehaviour
         if (scount > 0)
         {
             Shoot();
-            animator.SetInteger("Anim", 2);
+
         }
         else
         {
@@ -61,15 +68,15 @@ public class BossPreset : MonoBehaviour
                 atime = atimeset / singleton.diA;
                 atimecheck = true;
                 scountcheck = false;
-              
-            }
-               
 
-           
+            }
+
+
+
         }
         if (atime > 0)
         {
-            animator.SetInteger("Anim", 1);
+
             acounter += Time.deltaTime;
             if (acounter >= 1)
             {
@@ -84,10 +91,32 @@ public class BossPreset : MonoBehaviour
                 scount = sscount * singleton.diA;
                 scountcheck = true;
                 atimecheck = false;
-                
+
             }
 
 
+        }
+    }
+
+    private void Skin()
+    {
+        if (hurting == true)
+        {
+            animator.SetInteger("Anim", 3);
+            htimer += Time.deltaTime;
+            if (htimer > 1)
+            {
+                htimer = 0;
+                hurting = false;
+            }
+        }
+        else if (scount > 0)
+        {
+            animator.SetInteger("Anim", 2);
+        }
+        else if (atime > 0)
+        {
+            animator.SetInteger("Anim", 1);
         }
     }
 
