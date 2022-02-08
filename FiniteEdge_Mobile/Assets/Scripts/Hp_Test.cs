@@ -7,23 +7,14 @@ using UnityEngine.SceneManagement;
 public class Hp_Test : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI hpText;
-
+    [SerializeField] public AudioClip hitSFX;
     public static int currentHp = 5;
 
     private void Start()
     {
-        if (Dif_Test.easy == true)
-        {
-            currentHp = 7;
-        }
-        else if (Dif_Test.hard == true)
-        {
-            currentHp = 3;
-        }
-        else
-        {
+       
             currentHp = 5;
-        }
+        
     }
 
     private void Update()
@@ -36,8 +27,10 @@ public class Hp_Test : MonoBehaviour
         if (other.gameObject.tag == "Projectile")
         {
             currentHp -= 1;
+            AudioSource.PlayClipAtPoint(hitSFX, Camera.main.transform.position);
             Debug.Log("Current Hp: " + currentHp);
             hpText.text = "Current Hp: " + currentHp;
+            Movement.phurting = true;
         }
 
         if(currentHp <= 0)
