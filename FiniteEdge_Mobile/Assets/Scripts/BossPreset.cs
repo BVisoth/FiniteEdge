@@ -22,7 +22,6 @@ public class BossPreset : MonoBehaviour
     public float HitPoints;
     public float MaxHitpoints = 100;
     public HpBar_Test hpBar;
-    public Animator animator2;
 
     // Start is called before the first frame update
     void Start()
