@@ -12,20 +12,10 @@ public class PauseMenu : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Pause()
     {
-
-        if (Input.GetKeyDown(KeyCode.Escape) && Time.timeScale == 1)
-        {
-            Time.timeScale = 0;
-            GetComponent<Canvas>().enabled = true;
-        }
-        else if (Input.GetKeyDown(KeyCode.Escape) && Time.timeScale == 0)
-        {
-            Resume();
-        }
-
+    Time.timeScale = 0;
+    GetComponent<Canvas>().enabled = true;
     }
 
     public void Resume()

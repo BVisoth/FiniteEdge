@@ -18,18 +18,27 @@ EditorBuildSettings:
     path: Assets/Scenes/Boss Scenes/Scarecrow.unity
     guid: 0a67df2e0a43ac540bf67b375a70ed79
   - enabled: 1
+    path: Assets/Scenes/GameScreens/GameOver1.unity
+    guid: 93caf06426a462f47af7adf72ab23af6
+  - enabled: 1
     path: Assets/Scenes/Boss Scenes/Slime.unity
     guid: 259c33784f34f8c42820a33605888c8d
+  - enabled: 1
+    path: Assets/Scenes/GameScreens/GameOver2.unity
+    guid: 026577222e25cf542b711c22f36bde34
   - enabled: 1
     path: Assets/Scenes/Boss Scenes/Big Man.unity
     guid: 4ccea144dd0ae0e4cbadf774c17a0809
   - enabled: 1
+    path: Assets/Scenes/GameScreens/GameOver3.unity
+    guid: 45fd9f10c068d1145b88c88f1d3b92b4
+  - enabled: 1
     path: Assets/Scenes/Boss Scenes/Fire Man.unity
     guid: cf1b363e77232134f85f16d637483671
   - enabled: 1
+    path: Assets/Scenes/GameScreens/GameOver4.unity
+    guid: 692338223f3d080429de7b6f386bb6e9
+  - enabled: 1
     path: Assets/Scenes/GameScreens/WinMenu.unity
     guid: dff47e21b523d294199b88d5c4d9952a
-  - enabled: 1
-    path: Assets/Scenes/GameScreens/GameOver2.unity
-    guid: 33753ee5833229a428d16ae5074aaa0f
   m_configObjects: {}
