@@ -11,7 +11,7 @@ public class BossPreset : MonoBehaviour
     public int apple;
     public Transform[] positions;
     public GameObject ball;
-    public float atime;
+    public static float atime;
     [SerializeField] public int atimeset;
     [SerializeField] public int sscount;
     public int scount;
@@ -43,6 +43,7 @@ public class BossPreset : MonoBehaviour
         {
 
             //whenever the boss takes damage please set "hurting = true;" so boss plays the damage animation, Skin(); is what controls all boss animations
+            //YOU SKINED THEM?!?!
 
             HitPoints -= 10;
             hurting = true;

@@ -31,7 +31,6 @@ public class BossHp_Test : MonoBehaviour
                 Destroy(gameObject);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
             }
-            animator.SetInteger("Anim", 3);
         }
     }
 }
