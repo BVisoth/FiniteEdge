@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
 {
     public Animator animator;
     public Rigidbody2D body;
-
+   [SerializeField] public AudioClip dashSFX; 
 
         public void Right()
         {
@@ -19,7 +19,8 @@ public class Movement : MonoBehaviour
         {
             
             body.velocity = new Vector2(-40, 0);
-            
+
+        AudioSource.PlayClipAtPoint(dashSFX, new Vector3(0, 0, 0));
         }
 
     
