@@ -135,6 +135,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 326276297}
     - target: {fileID: 262694099, guid: 87e71a45c1e1a414380bc204be0fb728, type: 3}
+      propertyPath: atimeset
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 262694099, guid: 87e71a45c1e1a414380bc204be0fb728, type: 3}
       propertyPath: animator2
       value: 
       objectReference: {fileID: 1067031610}
@@ -393,7 +397,9 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Left
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2863029038210289844, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
+    - {fileID: 1100479241915783661, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
 --- !u!4 &266546230 stripped
 Transform:
@@ -1039,6 +1045,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1533668433, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
+      propertyPath: dashSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 98999801a510c7842893d85be7a25068, type: 3}
+    - target: {fileID: 1533668436, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
+      propertyPath: hitSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b8f7b29d16e99c49828939ce8a24394, type: 3}
     - target: {fileID: 1533668436, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
       propertyPath: hpText
       value: 
