@@ -9,11 +9,17 @@ public class Movement : MonoBehaviour
    [SerializeField] public AudioClip dashSFX;
     public static bool phurting;
     public float htimer;
+    public bool dLeft;
+    public bool dRight;
+    public float lTimer;
+    public float rTimer;
 
 
     public void Update()
     {
         Skin();
+        LDSkin();
+        RDSkin();
     }
 
     private void Skin()
@@ -28,23 +34,61 @@ public class Movement : MonoBehaviour
                 phurting = false;
             }
         }
+        if (phurting == false)
+        {
+            animator.SetInteger("Anim", 1);
+        }
     }
+
     public void Right()
     {
-
+        dRight = true;
         body.velocity = new Vector2(40, 0);
         AudioSource.PlayClipAtPoint(dashSFX, Camera.main.transform.position);
-        animator.SetInteger("Anim", 4);
+    }
+
+    private void RDSkin()
+    {
+        if (dRight == true)
+        {
+            animator.SetInteger("Anim", 4);
+            rTimer += Time.deltaTime;
+            if (rTimer > 0.25)
+            {
+                rTimer = 0;
+                dRight = false;
+            }
+        }
+        if (dRight == false)
+        {
+            animator.SetInteger("Anim", 1);
+        }
     }
 
     public void Left()
     {
-
+        dLeft = true;
         body.velocity = new Vector2(-40, 0);
         AudioSource.PlayClipAtPoint(dashSFX, Camera.main.transform.position);
-        animator.SetInteger("Anim", 4);
     }
 
+    private void LDSkin()
+    {
+        if (dLeft == true)
+        {
+            animator.SetInteger("Anim", 5);
+            lTimer += Time.deltaTime;
+            if (lTimer > 0.25)
+            {
+                lTimer = 0;
+                dLeft = false;
+            }
+        }
+        if (dLeft == false)
+        {
+            animator.SetInteger("Anim", 1);
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
