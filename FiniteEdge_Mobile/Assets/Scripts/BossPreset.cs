@@ -46,11 +46,11 @@ public class BossPreset : MonoBehaviour
         Skin();
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-
+            att();
             //whenever the boss takes damage please set "hurting = true;" so boss plays the damage animation, Skin(); is what controls all boss animations
             //YOU SKINED THEM?!?!
 
-           
+
 
             if (HitPoints <= 0)
             {

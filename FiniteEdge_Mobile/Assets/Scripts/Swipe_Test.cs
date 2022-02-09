@@ -8,7 +8,7 @@ public class Swipe_Test : MonoBehaviour
     {
         if(BossPreset.atime > 0)
         {
-            attk =
+            BossPreset.attk = true;
         }
     }
 }

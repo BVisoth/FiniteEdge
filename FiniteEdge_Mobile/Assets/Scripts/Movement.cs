@@ -14,7 +14,6 @@ public class Movement : MonoBehaviour
     public void Update()
     {
         Skin();
-        new Vector2 = 
     }
 
     private void Skin()
@@ -28,10 +27,6 @@ public class Movement : MonoBehaviour
                 htimer = 0;
                 phurting = false;
             }
-        }
-        else if ()
-        {
-
         }
     }
     public void Right()
