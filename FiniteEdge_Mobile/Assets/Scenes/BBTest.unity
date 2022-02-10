@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 1537481075}
   - component: {fileID: 1537481074}
   m_Layer: 0
-  m_Name: DownArrow (1)
+  m_Name: RightArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 1735781951}
   - component: {fileID: 1735781950}
   m_Layer: 0
-  m_Name: DownArrow (2)
+  m_Name: UpArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -537,7 +537,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735781949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8, y: -2.6, z: 0}
+  m_LocalPosition: {x: 5.49, y: -3.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -555,7 +555,7 @@ GameObject:
   - component: {fileID: 1851187673}
   - component: {fileID: 1851187672}
   m_Layer: 0
-  m_Name: DownArrow (3)
+  m_Name: LeftArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -639,7 +639,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851187671}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8, y: -2.6, z: 0}
+  m_LocalPosition: {x: -1.78, y: -3.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
