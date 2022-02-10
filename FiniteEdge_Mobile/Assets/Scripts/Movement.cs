@@ -18,8 +18,7 @@ public class Movement : MonoBehaviour
     public void Update()
     {
         Skin();
-        LDSkin();
-        RDSkin();
+        
     }
 
     private void Skin()
@@ -34,15 +33,22 @@ public class Movement : MonoBehaviour
                 phurting = false;
             }
         }
-        if (phurting == false)
+        else if (phurting == false)
         {
             animator.SetInteger("Anim", 1);
         }
+        else
+        {
+            LDSkin();
+            RDSkin();
+        }
+            
     }
 
     public void Right()
     {
         dRight = true;
+        dLeft = false;
         body.velocity = new Vector2(40, 0);
         AudioSource.PlayClipAtPoint(dashSFX, Camera.main.transform.position);
     }
@@ -51,16 +57,15 @@ public class Movement : MonoBehaviour
     {
         if (dRight == true)
         {
+            animator.SetInteger("Anim", 4);
         }
-        if (dRight == false)
-        {
-            animator.SetInteger("Anim", 1);
-        }
+       
     }
 
     public void Left()
     {
         dLeft = true;
+        dRight = false;
         body.velocity = new Vector2(-40, 0);
         AudioSource.PlayClipAtPoint(dashSFX, Camera.main.transform.position);
     }
