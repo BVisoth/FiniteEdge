@@ -1032,6 +1032,22 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 9051386325272930391}
+    - target: {fileID: 684111563, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
+      propertyPath: uparrow
+      value: 
+      objectReference: {fileID: 6340023613199856487, guid: a8081aacbd5c1f74f9043c7d2b821755, type: 3}
+    - target: {fileID: 684111563, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
+      propertyPath: downarrow
+      value: 
+      objectReference: {fileID: 4698796818152495531, guid: ded995a26c6dea547a2e1aa2ef97df9b, type: 3}
+    - target: {fileID: 684111563, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
+      propertyPath: leftarrow
+      value: 
+      objectReference: {fileID: 6063392529220850832, guid: 49b390c68fff5d84bad637aecdfeeddf, type: 3}
+    - target: {fileID: 684111563, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
+      propertyPath: rightarrow
+      value: 
+      objectReference: {fileID: 9025446422445391651, guid: 8f92866fc9036244aa3a53fd057e3621, type: 3}
     - target: {fileID: 1533668436, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
       propertyPath: hpText
       value: 
