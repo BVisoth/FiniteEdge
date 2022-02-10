@@ -9,7 +9,7 @@ public class BossPreset : MonoBehaviour
     public float acounter;
     static public int ran1;
     public int randomnumberchosen = -1;
-    public int lastshot;
+    public int lastShot;
     public Transform[] positions;
     public GameObject ball;
     public static float atime;
