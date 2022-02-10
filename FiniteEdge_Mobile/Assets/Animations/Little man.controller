@@ -112,7 +112,13 @@ AnimatorController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Little man
   serializedVersion: 5
-  m_AnimatorParameters: []
+  m_AnimatorParameters:
+  - m_Name: Anim
+    m_Type: 3
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -137,19 +143,19 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 8547807991296500329}
-    m_Position: {x: 200, y: 0, z: 0}
+    m_Position: {x: -20, y: 190, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1229410668721279355}
-    m_Position: {x: 235, y: 65, z: 0}
+    m_Position: {x: 40, y: 660, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6385284348269000615}
-    m_Position: {x: 270, y: 130, z: 0}
+    m_Position: {x: -200, y: 420, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1371701232253752370}
-    m_Position: {x: 305, y: 195, z: 0}
+    m_Position: {x: 320, y: 540, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5595020161182740581}
-    m_Position: {x: 340, y: 260, z: 0}
+    m_Position: {x: 300, y: 250, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
