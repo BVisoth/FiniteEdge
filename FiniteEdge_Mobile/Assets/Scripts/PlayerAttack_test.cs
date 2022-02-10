@@ -9,6 +9,7 @@ public class PlayerAttack_test : MonoBehaviour
     Vector2 secondPressPos;
     Vector2 currentSwipe;
 
+
     private void Update()
     {
         Swipe();

@@ -19,7 +19,7 @@ public class BossPreset : MonoBehaviour
     public bool scountcheck;
     [SerializeField] static public int bigmanhealth;
     public Animator animator;
-    public float HitPoints;
+   static public float HitPoints;
     public float MaxHitpoints = 100;
     public HpBar_Test hpBar;
     public bool hurting;
@@ -47,16 +47,11 @@ public class BossPreset : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             att();
-            //whenever the boss takes damage please set "hurting = true;" so boss plays the damage animation, Skin(); is what controls all boss animations
-            //YOU SKINED THEM?!?!
+           
 
 
 
-            if (HitPoints <= 0)
-            {
-                Destroy(gameObject);
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
-            }
+           
         }
 
         if (scount > 0)
@@ -143,6 +138,11 @@ public class BossPreset : MonoBehaviour
         hpBar.SetHealth(HitPoints, MaxHitpoints);
         Debug.Log("Current Hp: " + HitPoints);
         attk = false;
+        if (HitPoints <= 0)
+        {
+            Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        }
     }
 }
     
