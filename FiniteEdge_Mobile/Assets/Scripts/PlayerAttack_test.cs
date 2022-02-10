@@ -39,22 +39,22 @@ public class PlayerAttack_test : MonoBehaviour
 
                 //swipe upwards
                 if (currentSwipe.y > 0 && currentSwipe.x > -0.5f && currentSwipe.x < 0.5f)
-             {
+                {
                     Debug.Log("up swipe");
                 }
                 //swipe down
                 if (currentSwipe.y < 0 && currentSwipe.x > -0.5f && currentSwipe.x < 0.5f)
-             {
+                {
                     Debug.Log("down swipe");
                 }
                 //swipe left
                 if (currentSwipe.x < 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
-             {
+                {
                     Debug.Log("left swipe");
                 }
                 //swipe right
                 if (currentSwipe.x > 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
-             {
+                {
                     Debug.Log("right swipe");
                 }
             }
@@ -84,23 +84,24 @@ public class PlayerAttack_test : MonoBehaviour
 
             //swipe upwards
             if (currentSwipe2.y > 0 && currentSwipe2.x > -0.5f && currentSwipe2.x < 0.5f)
-        {
+            {
                 Debug.Log("up swipe");
             }
             //swipe down
             if (currentSwipe2.y < 0 && currentSwipe2.x > -0.5f && currentSwipe2.x < 0.5f)
-        {
+            {
                 Debug.Log("down swipe");
             }
             //swipe left
             if (currentSwipe2.x < 0 && currentSwipe2.y > -0.5f && currentSwipe2.y < 0.5f)
-        {
+            {
                 Debug.Log("left swipe");
             }
             //swipe right
             if (currentSwipe2.x > 0 && currentSwipe2.y > -0.5f && currentSwipe2.y < 0.5f)
-        {
+            {
                 Debug.Log("right swipe");
             }
         }
     }
+}
