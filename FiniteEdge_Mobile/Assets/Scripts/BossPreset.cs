@@ -8,7 +8,8 @@ public class BossPreset : MonoBehaviour
     public float counter;
     public float acounter;
     static public int ran1;
-    public int apple;
+    public int randomnumberchosen = -1;
+    public int lastShot;
     public Transform[] positions;
     public GameObject ball;
     public static float atime;
@@ -124,9 +125,13 @@ public class BossPreset : MonoBehaviour
         if (counter >= 1)
         {
             counter = 0;
-            apple = Random.Range(0, positions.Length);
-            ran1 = apple;
-            Vector3 position = positions[apple].position;
+            while (lastShot == randomnumberchosen)
+            {
+                randomnumberchosen = Random.Range(0, positions.Length);
+            }
+            lastShot = randomnumberchosen;
+            ran1 = randomnumberchosen;
+            Vector3 position = positions[randomnumberchosen].position;
             Instantiate(ball, position, Quaternion.identity);
             scount = scount - 1;
         }

@@ -51,13 +51,6 @@ public class Movement : MonoBehaviour
     {
         if (dRight == true)
         {
-            animator.SetInteger("Anim", 4);
-            rTimer += Time.deltaTime;
-            if (rTimer > 0.25)
-            {
-                rTimer = 0;
-                dRight = false;
-            }
         }
         if (dRight == false)
         {
@@ -77,17 +70,9 @@ public class Movement : MonoBehaviour
         if (dLeft == true)
         {
             animator.SetInteger("Anim", 5);
-            lTimer += Time.deltaTime;
-            if (lTimer > 0.25)
-            {
-                lTimer = 0;
-                dLeft = false;
-            }
+           
         }
-        if (dLeft == false)
-        {
-            animator.SetInteger("Anim", 1);
-        }
+       
     }
 
     private void OnTriggerEnter2D(Collider2D other)
