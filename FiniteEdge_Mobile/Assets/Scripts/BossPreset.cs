@@ -45,15 +45,6 @@ public class BossPreset : MonoBehaviour
             att();
         }
         Skin();
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            att();
-           
-
-
-
-           
-        }
 
         if (scount > 0)
         {
