@@ -173,8 +173,7 @@ MonoBehaviour:
   htimer: 0
   dLeft: 0
   dRight: 0
-  lTimer: 0
-  rTimer: 0
+  ptimer: 0
 --- !u!114 &1533668436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,8 +213,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackd: 0
-  breaker: 0
+  breaker: 1
   lattack: 0
   rattack: 0
   dattack: 0
   uattack: 0
+  target: {fileID: 0}
+  leftarrow: {fileID: 3270154436999597986, guid: 49b390c68fff5d84bad637aecdfeeddf, type: 3}
+  rightarrow: {fileID: 6451756093658458413, guid: 8f92866fc9036244aa3a53fd057e3621, type: 3}
+  uparrow: {fileID: 1278176727258449440, guid: a8081aacbd5c1f74f9043c7d2b821755, type: 3}
+  downarrow: {fileID: 4698796818152495531, guid: ded995a26c6dea547a2e1aa2ef97df9b, type: 3}

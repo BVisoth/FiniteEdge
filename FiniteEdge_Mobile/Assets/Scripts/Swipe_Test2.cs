@@ -17,7 +17,11 @@ public class Swipe_Test2 : MonoBehaviour
     public GameObject rightarrow;
     public GameObject uparrow;
     public GameObject downarrow;
-
+    
+    GameObject templeftarrow;
+    GameObject temprightarrow;
+    GameObject tempuparrow;
+    GameObject tempdownarrow;
 
     //inside class
     Vector2 firstPressPos;
@@ -164,13 +168,13 @@ public class Swipe_Test2 : MonoBehaviour
             {
                 breaker = false;
                 Debug.Log("Go Left!");
-                Instantiate(leftarrow, position, Quaternion.identity);
+                templeftarrow = Instantiate(leftarrow, position, Quaternion.identity);
                 if (lattack == true)
                 {
                     lattack = false;
                     BossPreset.attk = true;
                     breaker = true;
-                    Destroy(leftarrow);
+                    Destroy(templeftarrow);
                 }
 
 
@@ -179,13 +183,13 @@ public class Swipe_Test2 : MonoBehaviour
             {
                 breaker = false;
                 Debug.Log("Go Right!");
-                Instantiate(rightarrow, position, Quaternion.identity);
+                temprightarrow = Instantiate(rightarrow, position, Quaternion.identity);
                 if (rattack == true)
                 {
                     rattack = false;
                     BossPreset.attk = true;
                     breaker = true;
-                    Destroy(rightarrow);
+                    Destroy(temprightarrow);
                 }
 
             }
@@ -193,13 +197,13 @@ public class Swipe_Test2 : MonoBehaviour
             {
                 breaker = false;
                 Debug.Log("Go Up!");
-                Instantiate(uparrow, position, Quaternion.identity);
+                tempuparrow = Instantiate(uparrow, position, Quaternion.identity);
                 if (uattack == true)
                 {
                     uattack = false;
                     BossPreset.attk = true;
                     breaker = true;
-                    Destroy(uparrow);
+                    Destroy(tempuparrow);
 
                 }
             }
@@ -207,13 +211,13 @@ public class Swipe_Test2 : MonoBehaviour
             {
                 breaker = false;
                 Debug.Log("Go Down!");
-                Instantiate(downarrow, position, Quaternion.identity);
+                tempdownarrow = Instantiate(downarrow, position, Quaternion.identity);
                 if (dattack == true)
                 {
                     dattack = false;
                     BossPreset.attk = true;
                     breaker = true;
-                    Destroy(downarrow);
+                    Destroy(tempdownarrow);
 
                 }
             }
