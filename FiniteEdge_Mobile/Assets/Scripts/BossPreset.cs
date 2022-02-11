@@ -16,7 +16,7 @@ public class BossPreset : MonoBehaviour
     public static float atime;
     [SerializeField] public int atimeset;
     [SerializeField] public int sscount;
-    public int scount;
+    public float scount;
     public bool atimecheck;
     public bool scountcheck;
     [SerializeField] static public int bigmanhealth;
@@ -31,8 +31,8 @@ public class BossPreset : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        atime = atimeset / singleton.diA;
-        HitPoints = MaxHitpoints;
+        atime = (atimeset / singleton.diA ) + 5;
+        HitPoints = MaxHitpoints + (40 * singleton.diA);
         hpBar.SetHealth(HitPoints, MaxHitpoints);
         Debug.Log("Current Hp: " + HitPoints);
     }
@@ -79,7 +79,7 @@ public class BossPreset : MonoBehaviour
         {
             if (scountcheck == false)
             {
-                scount = sscount * singleton.diA;
+                scount = (sscount * 0.8f) + ((sscount * 0.2f) * singleton.diA);
                 scountcheck = true;
                 atimecheck = false;
 
@@ -114,7 +114,7 @@ public class BossPreset : MonoBehaviour
     private void Shoot()
     {
         counter += Time.deltaTime;
-        if (counter >= 1)
+        if (counter >= 1.2 -(0.2f * singleton.diA))
         {
             counter = 0;
             while (lastShot == randomnumberchosen)

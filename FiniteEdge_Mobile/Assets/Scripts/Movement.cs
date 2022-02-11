@@ -24,7 +24,7 @@ public class Movement : MonoBehaviour
         {
             Left();
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             Right();
         }
