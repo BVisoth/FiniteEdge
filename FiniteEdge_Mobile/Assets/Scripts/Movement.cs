@@ -11,8 +11,9 @@ public class Movement : MonoBehaviour
     public float htimer;
     public bool dLeft;
     public bool dRight;
-    public float lTimer;
-    public float rTimer;
+    public static bool pattack;
+    public float ptimer;
+
 
 
     public void Update()
@@ -33,15 +34,40 @@ public class Movement : MonoBehaviour
                 phurting = false;
             }
         }
-        else if (phurting == false)
+       else if (pattack == true)
         {
-            animator.SetInteger("Anim", 1);
+            animator.SetInteger("Anim", 2);
+            ptimer += Time.deltaTime;
+            if (ptimer > 1)
+            {
+                htimer = 0;
+                pattack = false;
+            }
         }
-        else
+        else 
         {
-            LDSkin();
-            RDSkin();
+         Vector2 apple =  new Vector2  (0, 0);
+            if (body.velocity == apple)
+            {
+                dRight = false;
+                dLeft = false;
+            }
+
+            if (dLeft == true || dRight == true)
+            {
+                LDSkin();
+                RDSkin();
+            }
+             else
+
+            {
+                animator.SetInteger("Anim", 1);
+
+            }
+
+
         }
+       
             
     }
 
@@ -49,7 +75,7 @@ public class Movement : MonoBehaviour
     {
         dRight = true;
         dLeft = false;
-        body.velocity = new Vector2(40, 0);
+        body.velocity = new Vector2(20, 0);
         AudioSource.PlayClipAtPoint(dashSFX, Camera.main.transform.position);
     }
 
@@ -66,7 +92,7 @@ public class Movement : MonoBehaviour
     {
         dLeft = true;
         dRight = false;
-        body.velocity = new Vector2(-40, 0);
+        body.velocity = new Vector2(-20, 0);
         AudioSource.PlayClipAtPoint(dashSFX, Camera.main.transform.position);
     }
 

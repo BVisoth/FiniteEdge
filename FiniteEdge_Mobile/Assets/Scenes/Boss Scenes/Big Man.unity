@@ -1033,6 +1033,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9051386325272930391}
     - target: {fileID: 684111563, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
+      propertyPath: breaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 684111563, guid: c069b95691cdadf42b9ffdc43ef6fc78, type: 3}
       propertyPath: uparrow
       value: 
       objectReference: {fileID: 6340023613199856487, guid: a8081aacbd5c1f74f9043c7d2b821755, type: 3}
