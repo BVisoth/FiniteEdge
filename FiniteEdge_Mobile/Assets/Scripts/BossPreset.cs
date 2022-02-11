@@ -35,6 +35,7 @@ public class BossPreset : MonoBehaviour
         HitPoints = MaxHitpoints + (40 * singleton.diA);
         hpBar.SetHealth(HitPoints, MaxHitpoints);
         Debug.Log("Current Hp: " + HitPoints);
+        MaxHitpoints = HitPoints;
     }
 
     // Update is called once per frame
@@ -79,7 +80,7 @@ public class BossPreset : MonoBehaviour
         {
             if (scountcheck == false)
             {
-                scount = (sscount * 0.8f) + ((sscount * 0.2f) * singleton.diA);
+                scount = (sscount * 0.6f) + ((sscount * 0.4f) * singleton.diA);
                 scountcheck = true;
                 atimecheck = false;
 
@@ -114,7 +115,7 @@ public class BossPreset : MonoBehaviour
     private void Shoot()
     {
         counter += Time.deltaTime;
-        if (counter >= 1.2 -(0.2f * singleton.diA))
+        if (counter >= 1.4 -(0.4f * singleton.diA))
         {
             counter = 0;
             while (lastShot == randomnumberchosen)
