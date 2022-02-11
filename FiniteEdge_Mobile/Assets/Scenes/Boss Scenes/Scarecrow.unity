@@ -803,6 +803,10 @@ MonoBehaviour:
   body: {fileID: 0}
   dashSFX: {fileID: 0}
   htimer: 0
+  dLeft: 0
+  dRight: 0
+  lTimer: 0
+  rTimer: 0
 --- !u!4 &1860983156
 Transform:
   m_ObjectHideFlags: 0
@@ -995,7 +999,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: 0
   acounter: 0
-  apple: 0
+  randomnumberchosen: -1
+  lastShot: 0
   positions:
   - {fileID: 1835443282}
   - {fileID: 20477671}
@@ -1008,9 +1013,8 @@ MonoBehaviour:
   atimecheck: 0
   scountcheck: 0
   animator: {fileID: 2133927303}
-  HitPoints: 0
   MaxHitpoints: 100
-  hpBar: {fileID: 0}
+  hpBar: {fileID: 380261068}
   hurting: 0
   htimer: 0
 --- !u!95 &2133927303 stripped
