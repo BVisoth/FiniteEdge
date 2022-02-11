@@ -20,6 +20,14 @@ public class Movement : MonoBehaviour
 
     public void Update()
     {
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            Left();
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            Right();
+        }
         Skin();
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, minX, maxX), transform.position.y, transform.position.z);
     }
@@ -80,7 +88,13 @@ public class Movement : MonoBehaviour
         body.velocity = new Vector2(20, 0);
         AudioSource.PlayClipAtPoint(dashSFX, Camera.main.transform.position);
     }
-
+    public void Left()
+    {
+        dLeft = true;
+        dRight = false;
+        body.velocity = new Vector2(-20, 0);
+        AudioSource.PlayClipAtPoint(dashSFX, Camera.main.transform.position);
+    }
     private void RDSkin()
     {
         if (dRight == true)
@@ -90,13 +104,7 @@ public class Movement : MonoBehaviour
        
     }
 
-    public void Left()
-    {
-        dLeft = true;
-        dRight = false;
-        body.velocity = new Vector2(-20, 0);
-        AudioSource.PlayClipAtPoint(dashSFX, Camera.main.transform.position);
-    }
+   
 
     private void LDSkin()
     {
@@ -113,6 +121,16 @@ public class Movement : MonoBehaviour
         if (other.gameObject.tag == "Stopper")
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            dRight = false;
+            dLeft = false;
+        }
+
+    }
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Stopper")
+        {
+            
             dRight = false;
             dLeft = false;
         }
