@@ -311,6 +311,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 454232844, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3.4985657
+      objectReference: {fileID: 0}
     - target: {fileID: 1639706189, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -38.00006
@@ -876,6 +880,8 @@ MonoBehaviour:
   dLeft: 0
   dRight: 0
   ptimer: 0
+  minX: -7
+  maxX: 7
 --- !u!4 &1860983156
 Transform:
   m_ObjectHideFlags: 0
@@ -1066,6 +1072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a86f26295f44ad943be62fad92701872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageSFX: {fileID: 8300000, guid: 7f825566c8744d44c9de1589abf939ee, type: 3}
   counter: 0
   acounter: 0
   randomnumberchosen: -1

@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a86f26295f44ad943be62fad92701872, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageSFX: {fileID: 0}
   counter: 0
   acounter: 0
   randomnumberchosen: -1
