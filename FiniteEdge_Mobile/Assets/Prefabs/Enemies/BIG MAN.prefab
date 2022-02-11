@@ -118,20 +118,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: 0
   acounter: 0
-  apple: 0
+  randomnumberchosen: -1
+  lastShot: 0
   positions:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   ball: {fileID: 3976024029037204112, guid: d2a0638f76208f042b5bf63c9cdcf38f, type: 3}
-  atime: 0
   atimeset: 3
-  sscount: 7
+  sscount: 10
   scount: 0
   atimecheck: 0
   scountcheck: 0
   animator: {fileID: 400551609916345417}
+  MaxHitpoints: 100
+  hpBar: {fileID: 0}
+  hurting: 0
+  htimer: 0
 --- !u!114 &262694101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,3 +151,4 @@ MonoBehaviour:
   HitPoints: 0
   MaxHitpoints: 100
   hpBar: {fileID: 0}
+  animator: {fileID: 0}
