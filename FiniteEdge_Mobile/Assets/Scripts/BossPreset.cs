@@ -114,8 +114,10 @@ public class BossPreset : MonoBehaviour
 
     private void Shoot()
     {
+        float factor = 0.3f * singleton.diA;
+        float ranfactor = Random.Range(0, factor);
         counter += Time.deltaTime;
-        if (counter >= 1.4 -(0.4f * singleton.diA))
+        if (counter >= 1.2 -(0.2f * singleton.diA) - ranfactor)
         {
             counter = 0;
             while (lastShot == randomnumberchosen)
