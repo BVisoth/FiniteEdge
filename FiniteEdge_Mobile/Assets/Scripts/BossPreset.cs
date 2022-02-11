@@ -129,6 +129,7 @@ public class BossPreset : MonoBehaviour
     }
     public void att()
     {
+        Movement.pattack = true;
         HitPoints -= 10;
         hurting = true;
         hpBar.SetHealth(HitPoints, MaxHitpoints);
