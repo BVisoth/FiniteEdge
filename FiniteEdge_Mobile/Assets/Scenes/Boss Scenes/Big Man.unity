@@ -135,8 +135,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 326276297}
     - target: {fileID: 262694099, guid: 87e71a45c1e1a414380bc204be0fb728, type: 3}
+      propertyPath: sscount
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 262694099, guid: 87e71a45c1e1a414380bc204be0fb728, type: 3}
       propertyPath: atimeset
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 262694099, guid: 87e71a45c1e1a414380bc204be0fb728, type: 3}
       propertyPath: animator2

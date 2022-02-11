@@ -1250,8 +1250,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 924571767}
     - target: {fileID: 1916926339, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
+      propertyPath: sscount
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916926339, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
       propertyPath: atimeset
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1916926339, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
       propertyPath: damageSFX

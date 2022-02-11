@@ -1083,7 +1083,7 @@ MonoBehaviour:
   - {fileID: 1235986396}
   - {fileID: 990262370}
   ball: {fileID: 6116289240136836486, guid: 29992fa036caa1643bfa876f12512856, type: 3}
-  atimeset: 20
+  atimeset: 8
   sscount: 7
   scount: 0
   atimecheck: 0
