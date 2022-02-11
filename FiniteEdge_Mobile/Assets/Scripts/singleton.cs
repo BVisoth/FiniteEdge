@@ -7,19 +7,7 @@ using UnityEngine.SceneManagement;
 public class singleton : MonoBehaviour
 {
     static public int diA;
-    private void Awake()
-    {
-        int gameStatusCount = FindObjectsOfType<singleton>().Length;
-        if (gameStatusCount > 1)
-        {
-            gameObject.SetActive(false);
-            Destroy(gameObject);
-        }
-        else
-        {
-            DontDestroyOnLoad(gameObject);
-        }
-    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,25 +17,31 @@ public class singleton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log("Dia =" + diA);
+        if(Dif_Test.easy == true)
+        {
+            diA = 0 + 1;
+        }
+        else if(Dif_Test.normal == true)
+        {
+            diA = 0 + 2;
+        }
+        else if (Dif_Test.hard == true)
+        {
+            diA = 0 + 3;
+        }
     }
     public void dif1()
     {
-        diA = 1;
-        SceneManager.LoadScene(2);
-        FindObjectOfType<Level>();
+
     }
     public void dif2()
     {
-        diA = 2;
-        SceneManager.LoadScene(2);
-        FindObjectOfType<Level>();
+
     }
     public void dif3()
     {
-        diA = 3;
-        SceneManager.LoadScene(2);
-        FindObjectOfType<Level>();
+
     }
 }
 

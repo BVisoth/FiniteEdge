@@ -7,11 +7,13 @@ public class Dif_Test : MonoBehaviour
 {
     public static bool easy;
     public static bool hard;
+    public static bool normal;
 
     void Start()
     {
         easy = false;
         hard = false;
+        normal = false;
     }
 
     public void EasyModeOn()
@@ -28,8 +30,9 @@ public class Dif_Test : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
-    public void LoadNextScene()
+    public void NormalModeOn()
     {
+        normal = true;
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
