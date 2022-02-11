@@ -472,15 +472,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7617702733532159627, guid: e0e58dcfebc7bf34ba38867c8eac793a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 442.6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7617702733532159627, guid: e0e58dcfebc7bf34ba38867c8eac793a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 230.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7617702733532159627, guid: e0e58dcfebc7bf34ba38867c8eac793a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -152.416
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7617702733532159627, guid: e0e58dcfebc7bf34ba38867c8eac793a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1250,8 +1250,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 924571767}
     - target: {fileID: 1916926339, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
+      propertyPath: sscount
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916926339, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
       propertyPath: atimeset
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1916926339, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
       propertyPath: damageSFX
@@ -1303,7 +1307,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3258145058729866179, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3258145058729866179, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
       propertyPath: m_LocalRotation.w

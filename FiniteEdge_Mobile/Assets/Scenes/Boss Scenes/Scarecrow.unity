@@ -532,15 +532,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7617702733532159627, guid: e0e58dcfebc7bf34ba38867c8eac793a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 442.6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7617702733532159627, guid: e0e58dcfebc7bf34ba38867c8eac793a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 230.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7617702733532159627, guid: e0e58dcfebc7bf34ba38867c8eac793a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -152.416
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7617702733532159627, guid: e0e58dcfebc7bf34ba38867c8eac793a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1023,7 +1023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3150189656400671548, guid: af18a768698208a4dab84f2101f890f7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3150189656400671548, guid: af18a768698208a4dab84f2101f890f7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1083,7 +1083,7 @@ MonoBehaviour:
   - {fileID: 1235986396}
   - {fileID: 990262370}
   ball: {fileID: 6116289240136836486, guid: 29992fa036caa1643bfa876f12512856, type: 3}
-  atimeset: 20
+  atimeset: 8
   sscount: 7
   scount: 0
   atimecheck: 0
