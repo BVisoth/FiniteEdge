@@ -13,13 +13,15 @@ public class Movement : MonoBehaviour
     public bool dRight;
     public static bool pattack;
     public float ptimer;
+    public float minX = -7;
+    public float maxX = 7;
 
 
 
     public void Update()
     {
         Skin();
-        
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, minX, maxX), transform.position.y, transform.position.z);
     }
 
     private void Skin()
@@ -111,6 +113,8 @@ public class Movement : MonoBehaviour
         if (other.gameObject.tag == "Stopper")
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            dRight = false;
+            dLeft = false;
         }
     }
 }
