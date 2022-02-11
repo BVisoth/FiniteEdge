@@ -124,7 +124,7 @@ public class Swipe_Test2 : MonoBehaviour
     }
     private void Start()
     {
-       
+        breaker = true;
     }
 
     void Update()
@@ -134,6 +134,7 @@ public class Swipe_Test2 : MonoBehaviour
             Debug.Log("Atime");
             Dir();
             Debug.Log("attackd"+attackd);
+
            
         }
         if (BossPreset.atime > 0)
