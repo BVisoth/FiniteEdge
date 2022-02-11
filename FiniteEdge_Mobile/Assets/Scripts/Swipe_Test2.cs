@@ -135,18 +135,20 @@ public class Swipe_Test2 : MonoBehaviour
     {
         if (BossPreset.atime > 0)
         {
-            Debug.Log("Atime");
             Dir();
-            Debug.Log("attackd"+attackd);
-
-           
         }
         if (BossPreset.atime > 0)
         {
             Swipe();
             Swipe2();
         }
-
+        if (BossPreset.atime == 0)
+        {
+            Destroy(templeftarrow);
+            Destroy(temprightarrow);
+            Destroy(tempdownarrow);
+            Destroy(tempuparrow);
+        }
 
 
     }
@@ -168,7 +170,13 @@ public class Swipe_Test2 : MonoBehaviour
             {
                 breaker = false;
                 Debug.Log("Go Left!");
-                templeftarrow = Instantiate(leftarrow, position, Quaternion.identity);
+                int gameStatusCount = FindObjectsOfType<Arrow>().Length;
+
+                if (gameStatusCount == 0)
+                {
+                    templeftarrow = Instantiate(leftarrow, position, Quaternion.identity);
+                }
+
                 if (lattack == true)
                 {
                     lattack = false;
@@ -183,7 +191,12 @@ public class Swipe_Test2 : MonoBehaviour
             {
                 breaker = false;
                 Debug.Log("Go Right!");
-                temprightarrow = Instantiate(rightarrow, position, Quaternion.identity);
+                int gameStatusCount = FindObjectsOfType<Arrow>().Length;
+
+                if (gameStatusCount == 0)
+                {
+                    temprightarrow = Instantiate(rightarrow, position, Quaternion.identity);
+                }
                 if (rattack == true)
                 {
                     rattack = false;
@@ -197,7 +210,12 @@ public class Swipe_Test2 : MonoBehaviour
             {
                 breaker = false;
                 Debug.Log("Go Up!");
-                tempuparrow = Instantiate(uparrow, position, Quaternion.identity);
+                int gameStatusCount = FindObjectsOfType<Arrow>().Length;
+
+                if (gameStatusCount == 0)
+                {
+                    tempuparrow = Instantiate(uparrow, position, Quaternion.identity);
+                }
                 if (uattack == true)
                 {
                     uattack = false;
@@ -211,7 +229,12 @@ public class Swipe_Test2 : MonoBehaviour
             {
                 breaker = false;
                 Debug.Log("Go Down!");
-                tempdownarrow = Instantiate(downarrow, position, Quaternion.identity);
+                int gameStatusCount = FindObjectsOfType<Arrow>().Length;
+
+                if (gameStatusCount == 0)
+                {
+                    tempdownarrow = Instantiate(downarrow, position, Quaternion.identity);
+                }
                 if (dattack == true)
                 {
                     dattack = false;

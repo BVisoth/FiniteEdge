@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6451756093658458414}
   - component: {fileID: 6451756093658458415}
   - component: {fileID: 6451756093658458412}
+  - component: {fileID: -6694599733413238510}
   m_Layer: 0
   m_Name: RightArrow
   m_TagString: Untagged
@@ -102,3 +103,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-6694599733413238510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6451756093658458413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45b71486d3b84314d8628ca356340339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
