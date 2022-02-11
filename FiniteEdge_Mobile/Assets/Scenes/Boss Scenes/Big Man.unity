@@ -143,6 +143,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1067031610}
     - target: {fileID: 262694099, guid: 87e71a45c1e1a414380bc204be0fb728, type: 3}
+      propertyPath: damageSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 7f825566c8744d44c9de1589abf939ee, type: 3}
+    - target: {fileID: 262694099, guid: 87e71a45c1e1a414380bc204be0fb728, type: 3}
       propertyPath: positions.Array.data[0]
       value: 
       objectReference: {fileID: 266546230}
@@ -176,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 910045394401596501, guid: 87e71a45c1e1a414380bc204be0fb728, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.67
+      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: 910045394401596501, guid: 87e71a45c1e1a414380bc204be0fb728, type: 3}
       propertyPath: m_LocalPosition.y

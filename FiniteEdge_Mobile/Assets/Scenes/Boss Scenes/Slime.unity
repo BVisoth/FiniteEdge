@@ -248,7 +248,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &82398856
 GameObject:
@@ -1253,6 +1253,10 @@ PrefabInstance:
       propertyPath: atimeset
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 1916926339, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
+      propertyPath: damageSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 7f825566c8744d44c9de1589abf939ee, type: 3}
     - target: {fileID: 1916926339, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
       propertyPath: MaxHitpoints
       value: 200
