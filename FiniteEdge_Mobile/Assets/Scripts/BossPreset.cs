@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BossPreset : MonoBehaviour
 {
+    [SerializeField] public AudioClip damageSFX;
     public float counter;
     public float acounter;
     static public int ran1;
@@ -129,6 +130,7 @@ public class BossPreset : MonoBehaviour
     }
     public void att()
     {
+        AudioSource.PlayClipAtPoint(damageSFX, Camera.main.transform.position);
         Movement.pattack = true;
         HitPoints -= 10;
         hurting = true;
