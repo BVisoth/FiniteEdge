@@ -27,6 +27,8 @@ public class BossPreset : MonoBehaviour
     public bool hurting;
     public float htimer;
     public static bool attk;
+    public float wall;
+    public bool wallc;
 
     public float factor;
 
@@ -142,7 +144,16 @@ public class BossPreset : MonoBehaviour
             scount = scount - 1;
             if (rwall == 4 && lastShot ==1|| rwall == 4 && lastShot == 2)
             {
-                counter = counter * 1.2f - (0.2f * singleton.diA) - ranfactor;
+                wallc = true;
+            }
+
+        }
+        if (wallc == true)
+        {
+            wall += Time.deltaTime;
+            if(wall>=1)
+            {
+                wallc = false;
                 Instantiate(ball, positions[1].position, Quaternion.identity);
                 Instantiate(ball, positions[2].position, Quaternion.identity);
             }
