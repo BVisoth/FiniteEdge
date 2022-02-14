@@ -99,7 +99,8 @@ public class Swipe_Test2 : MonoBehaviour
 
             //normalize the 2d vector
             currentSwipe2.Normalize();
-
+         
+            
             //swipe upwards
             if (currentSwipe2.y > 0 && currentSwipe2.x > -0.5f && currentSwipe2.x < 0.5f)
             {
@@ -107,23 +108,41 @@ public class Swipe_Test2 : MonoBehaviour
                 uattack = true;
             }
             //swipe down
-            if (currentSwipe2.y < 0 && currentSwipe2.x > -0.5f && currentSwipe2.x < 0.5f)
+            if (currentSwipe2.y < 0 && currentSwipe2.x > -0.5f && currentSwipe2.x < 0.5f || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 Debug.Log("down swipe");
                 dattack = true;
             }
             //swipe left
-            if (currentSwipe2.x < 0 && currentSwipe2.y > -0.5f && currentSwipe2.y < 0.5f)
+            if (currentSwipe2.x < 0 && currentSwipe2.y > -0.5f && currentSwipe2.y < 0.5f || Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 Debug.Log("left swipe");
                 lattack = true;
             }
             //swipe right
-            if (currentSwipe2.x > 0 && currentSwipe2.y > -0.5f && currentSwipe2.y < 0.5f)
+            if (currentSwipe2.x > 0 && currentSwipe2.y > -0.5f && currentSwipe2.y < 0.5f || Input.GetKeyDown(KeyCode.RightArrow))
             {
                 Debug.Log("right swipe");
                 rattack = true;
             }
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            uattack = true;
+        }
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            dattack = true;
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            lattack = true;
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            rattack = true;
         }
     }
     private void Start()
@@ -142,7 +161,7 @@ public class Swipe_Test2 : MonoBehaviour
             Swipe();
             Swipe2();
         }
-        if (BossPreset.atime == 0)
+        if (BossPreset.atime < 0)
         {
             Destroy(templeftarrow);
             Destroy(temprightarrow);

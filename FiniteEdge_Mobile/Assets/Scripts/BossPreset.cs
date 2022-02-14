@@ -28,6 +28,8 @@ public class BossPreset : MonoBehaviour
     public float htimer;
     public static bool attk;
 
+    public float factor;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,7 +59,7 @@ public class BossPreset : MonoBehaviour
         {
             if (atimecheck == false)
             {
-                atime = atimeset / singleton.diA;
+                atime = (atimeset * 1.2f) - ((atimeset * 0.8f) / singleton.diA);
                 atimecheck = true;
                 scountcheck = false;
 
@@ -114,7 +116,15 @@ public class BossPreset : MonoBehaviour
 
     private void Shoot()
     {
-        float factor = 0.05f * singleton.diA;
+        if (HitPoints < MaxHitpoints * 0.5f)
+        {
+            factor = 0.13f * singleton.diA;
+        }
+        else
+        {
+          factor = 0.08f * singleton.diA;
+        }
+       
         float ranfactor = Random.Range(0, factor);
         counter += Time.deltaTime;
         if (counter >= 1.2 -(0.2f * singleton.diA) - ranfactor)
@@ -133,9 +143,21 @@ public class BossPreset : MonoBehaviour
     }
     public void att()
     {
+        if (atime > 0)
+        {
+            atime = atime - 0.15f * singleton.diA;
+        }
         AudioSource.PlayClipAtPoint(damageSFX, Camera.main.transform.position);
         Movement.pattack = true;
         HitPoints -= 10;
+        if (HitPoints < MaxHitpoints * 0.5f)
+        {
+            HitPoints -= 9 - (1 * singleton.diA);
+        }
+        else
+        {
+            HitPoints -= 10;
+        }
         hurting = true;
         hpBar.SetHealth(HitPoints, MaxHitpoints);
         Debug.Log("Current Hp: " + HitPoints);
