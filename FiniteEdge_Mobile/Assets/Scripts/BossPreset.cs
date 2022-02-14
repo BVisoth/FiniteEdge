@@ -149,7 +149,7 @@ public class BossPreset : MonoBehaviour
         }
         AudioSource.PlayClipAtPoint(damageSFX, Camera.main.transform.position);
         Movement.pattack = true;
-        HitPoints -= 10;
+        
         if (HitPoints < MaxHitpoints * 0.5f)
         {
             HitPoints -= 9 - (1 * singleton.diA);
