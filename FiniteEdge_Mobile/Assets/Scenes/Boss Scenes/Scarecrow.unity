@@ -315,6 +315,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 3.4985657
       objectReference: {fileID: 0}
+    - target: {fileID: 454232845, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3552a3d49a3f9314a8aaee17f43f56fb, type: 3}
     - target: {fileID: 1639706189, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -38.00006
@@ -1093,6 +1097,7 @@ MonoBehaviour:
   hpBar: {fileID: 380261068}
   hurting: 0
   htimer: 0
+  factor: 0
 --- !u!95 &2133927303 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3150189656400671546, guid: af18a768698208a4dab84f2101f890f7, type: 3}
