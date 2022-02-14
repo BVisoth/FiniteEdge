@@ -69,7 +69,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 4ee31d0cf4d1fa1499b19154ec6d8dda, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 50
     m_Alignment: 4
@@ -148,7 +148,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 4ee31d0cf4d1fa1499b19154ec6d8dda, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 50
     m_Alignment: 4
@@ -293,10 +293,10 @@ RectTransform:
   m_Father: {fileID: 4086370629009562410}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18, y: 222}
-  m_SizeDelta: {x: 274.9774, y: 134.52}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 18, y: -38}
+  m_SizeDelta: {x: 274.9774, y: 134.52002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4086370629394740595
 CanvasRenderer:
@@ -356,9 +356,9 @@ MonoBehaviour:
   m_fontSize: 50
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 50
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -464,7 +464,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 4ee31d0cf4d1fa1499b19154ec6d8dda, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 50
     m_Alignment: 4
@@ -486,6 +486,7 @@ GameObject:
   - component: {fileID: 4086370629671793481}
   - component: {fileID: 4086370629671793480}
   - component: {fileID: 4086370629671793483}
+  - component: {fileID: 1105795177618627887}
   m_Layer: 5
   m_Name: Main Menu Button
   m_TagString: Untagged
@@ -508,10 +509,10 @@ RectTransform:
   m_Father: {fileID: 4086370629009562410}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13, y: 75}
-  m_SizeDelta: {x: 240.1406, y: 45.026}
+  m_AnchorMin: {x: 0.38039702, y: 0.60400003}
+  m_AnchorMax: {x: 0.6484523, y: 0.700135}
+  m_AnchoredPosition: {x: 0.5, y: 0.5}
+  m_SizeDelta: {x: 7.1405945, y: -1.973999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4086370629671793481
 CanvasRenderer:
@@ -595,9 +596,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: ac03ec83da48e7446a36026dc51144e9, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 1105795177618627887}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadStartScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -607,6 +608,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1105795177618627887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4086370629671793493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac03ec83da48e7446a36026dc51144e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4086370629920641972
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,6 +632,7 @@ GameObject:
   - component: {fileID: 4086370629920641960}
   - component: {fileID: 4086370629920641963}
   - component: {fileID: 4086370629920641962}
+  - component: {fileID: 1105795177618627885}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -641,10 +655,10 @@ RectTransform:
   m_Father: {fileID: 4086370629009562410}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13, y: -75}
-  m_SizeDelta: {x: 236.0448, y: 44.2584}
+  m_AnchorMin: {x: 0.38039702, y: 0.30623528}
+  m_AnchorMax: {x: 0.6484523, y: 0.38959515}
+  m_AnchoredPosition: {x: 0.5, y: -0.5}
+  m_SizeDelta: {x: 3.0447998, y: 3.2584}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4086370629920641960
 CanvasRenderer:
@@ -728,9 +742,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: ac03ec83da48e7446a36026dc51144e9, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 1105795177618627885}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -740,6 +754,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1105795177618627885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4086370629920641972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac03ec83da48e7446a36026dc51144e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4086370629997698781
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,6 +778,7 @@ GameObject:
   - component: {fileID: 4086370629997698769}
   - component: {fileID: 4086370629997698768}
   - component: {fileID: 4086370629997698771}
+  - component: {fileID: 1105795177618627886}
   m_Layer: 5
   m_Name: Retry Button
   m_TagString: Untagged
@@ -774,10 +801,10 @@ RectTransform:
   m_Father: {fileID: 4086370629009562410}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13, y: 0}
-  m_SizeDelta: {x: 240.1406, y: 45.026}
+  m_AnchorMin: {x: 0.38039702, y: 0.46300003}
+  m_AnchorMax: {x: 0.6484523, y: 0.53885466}
+  m_AnchoredPosition: {x: 1, y: -0.5}
+  m_SizeDelta: {x: 8.1405945, y: 8.026001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4086370629997698769
 CanvasRenderer:
@@ -861,9 +888,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: ac03ec83da48e7446a36026dc51144e9, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadLastScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -873,3 +900,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1105795177618627886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4086370629997698781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac03ec83da48e7446a36026dc51144e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

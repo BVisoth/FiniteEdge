@@ -435,10 +435,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 43.6
   m_fontSizeBase: 72
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -546,7 +546,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 4ee31d0cf4d1fa1499b19154ec6d8dda, type: 3}
     m_FontSize: 72
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 72
     m_Alignment: 4
@@ -892,10 +892,10 @@ RectTransform:
   m_Father: {fileID: 1683297179}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.3997292, y: 0.8937778}
-  m_AnchorMax: {x: 0.6061667, y: 1}
-  m_AnchoredPosition: {x: -5.66, y: -717}
-  m_SizeDelta: {x: -233.57312, y: -69.29779}
+  m_AnchorMin: {x: 0.3997292, y: 0.20555557}
+  m_AnchorMax: {x: 0.6061667, y: 0.30837038}
+  m_AnchoredPosition: {x: -5.6600037, y: 29}
+  m_SizeDelta: {x: -233.57312, y: -65.29779}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1645494428
 MonoBehaviour:
@@ -944,10 +944,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 32.4
   m_fontSizeBase: 72
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1101,10 +1101,10 @@ RectTransform:
   m_Father: {fileID: 1683297179}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.3997292, y: 0.8937778}
-  m_AnchorMax: {x: 0.6061667, y: 1}
-  m_AnchoredPosition: {x: 26, y: -482.64}
-  m_SizeDelta: {x: -233.57312, y: -69.29779}
+  m_AnchorMin: {x: 0.108208336, y: 0.30837038}
+  m_AnchorMax: {x: 0.9332084, y: 0.5}
+  m_AnchoredPosition: {x: -8, y: 104.359985}
+  m_SizeDelta: {x: -1421.5731, y: -161.29779}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1677998676
 MonoBehaviour:
@@ -1153,10 +1153,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 66.6
   m_fontSizeBase: 72
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1466,7 +1466,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 4ee31d0cf4d1fa1499b19154ec6d8dda, type: 3}
     m_FontSize: 72
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 72
     m_Alignment: 4
