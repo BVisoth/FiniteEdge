@@ -435,10 +435,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 43.6
   m_fontSizeBase: 72
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -546,7 +546,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 4ee31d0cf4d1fa1499b19154ec6d8dda, type: 3}
     m_FontSize: 72
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 72
     m_Alignment: 4
@@ -892,10 +892,10 @@ RectTransform:
   m_Father: {fileID: 1683297179}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.3997292, y: 0.8937778}
-  m_AnchorMax: {x: 0.6061667, y: 1}
-  m_AnchoredPosition: {x: -5.66, y: -717}
-  m_SizeDelta: {x: -233.57312, y: -69.29779}
+  m_AnchorMin: {x: 0.3856667, y: 0.216}
+  m_AnchorMax: {x: 0.63100004, y: 0.30937037}
+  m_AnchoredPosition: {x: -16.160004, y: 23.000015}
+  m_SizeDelta: {x: -308.57312, y: -55.29779}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1645494428
 MonoBehaviour:
@@ -944,10 +944,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 38.85
   m_fontSizeBase: 72
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1101,10 +1101,10 @@ RectTransform:
   m_Father: {fileID: 1683297179}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.3997292, y: 0.8937778}
-  m_AnchorMax: {x: 0.6061667, y: 1}
-  m_AnchoredPosition: {x: 26, y: -482.64}
-  m_SizeDelta: {x: -233.57312, y: -69.29779}
+  m_AnchorMin: {x: 0, y: 0.30937037}
+  m_AnchorMax: {x: 1, y: 0.52}
+  m_AnchoredPosition: {x: 32, y: 92.859985}
+  m_SizeDelta: {x: -1755.5731, y: -182.29779}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1677998676
 MonoBehaviour:
@@ -1126,7 +1126,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Crimes: Stolen Royal Armor, Big Fists, Loitering'
+  m_text: 'Crimes: Stolen Royal Armor, Big Fists, Standing Meancingly, Loitering'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ce7a66b6d676f6e4c84edddb7f260ad5, type: 2}
   m_sharedMaterial: {fileID: 3361069817539119195, guid: ce7a66b6d676f6e4c84edddb7f260ad5, type: 2}
@@ -1153,10 +1153,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 60.15
   m_fontSizeBase: 72
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1189,7 +1189,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -791.6424, y: 0, z: -804.3877, w: -188.73978}
+  m_margin: {x: -908.4139, y: 0, z: -852.15796, w: -188.73978}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1466,7 +1466,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 4ee31d0cf4d1fa1499b19154ec6d8dda, type: 3}
     m_FontSize: 72
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 72
     m_Alignment: 4
