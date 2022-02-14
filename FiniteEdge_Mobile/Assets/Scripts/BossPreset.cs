@@ -34,7 +34,7 @@ public class BossPreset : MonoBehaviour
     void Start()
     {
         atime = (atimeset / singleton.diA ) + 5;
-        HitPoints = MaxHitpoints + (40 * singleton.diA);
+        HitPoints = MaxHitpoints + (70 * singleton.diA);
         hpBar.SetHealth(HitPoints, MaxHitpoints);
         Debug.Log("Current Hp: " + HitPoints);
         MaxHitpoints = HitPoints;
