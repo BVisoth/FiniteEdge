@@ -118,7 +118,7 @@ public class BossPreset : MonoBehaviour
     {
         if (HitPoints < MaxHitpoints * 0.5f)
         {
-            factor = 0.13f * singleton.diA;
+            factor = 0.1f * singleton.diA;
         }
         else
         {
@@ -129,6 +129,7 @@ public class BossPreset : MonoBehaviour
         counter += Time.deltaTime;
         if (counter >= 1.2 -(0.2f * singleton.diA) - ranfactor)
         {
+            int rwall = Random.Range(0, 5);
             counter = 0;
             while (lastShot == randomnumberchosen)
             {
@@ -139,6 +140,12 @@ public class BossPreset : MonoBehaviour
             Vector3 position = positions[randomnumberchosen].position;
             Instantiate(ball, position, Quaternion.identity);
             scount = scount - 1;
+            if (rwall == 4 && lastShot ==1|| rwall == 4 && lastShot == 2)
+            {
+                counter = counter * 1.2f - (0.2f * singleton.diA) - ranfactor;
+                Instantiate(ball, positions[1].position, Quaternion.identity);
+                Instantiate(ball, positions[2].position, Quaternion.identity);
+            }
         }
     }
     public void att()
@@ -152,7 +159,7 @@ public class BossPreset : MonoBehaviour
         
         if (HitPoints < MaxHitpoints * 0.5f)
         {
-            HitPoints -= 9 - (1 * singleton.diA);
+            HitPoints -= 9 - (2 * singleton.diA);
         }
         else
         {
