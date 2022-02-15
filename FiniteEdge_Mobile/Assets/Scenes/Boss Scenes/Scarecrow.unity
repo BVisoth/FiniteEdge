@@ -313,7 +313,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 454232844, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3.4985657
+      value: 3.4985352
+      objectReference: {fileID: 0}
+    - target: {fileID: 454232844, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6.7192383
       objectReference: {fileID: 0}
     - target: {fileID: 454232845, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_Sprite
@@ -322,6 +326,26 @@ PrefabInstance:
     - target: {fileID: 1639706189, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -38.00006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1639706190, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+      propertyPath: m_fontSize
+      value: 40.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 1639706190, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1639706190, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1639706190, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1639706190, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7430182848248780053, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_AnchorMax.x
@@ -334,6 +358,10 @@ PrefabInstance:
     - target: {fileID: 7430182848248780053, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7430182849792207926, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 8.331055
       objectReference: {fileID: 0}
     - target: {fileID: 7430182850209218663, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_Name
@@ -964,7 +992,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.08
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1097,6 +1125,8 @@ MonoBehaviour:
   hpBar: {fileID: 380261068}
   hurting: 0
   htimer: 0
+  wall: 0
+  wallc: 0
   factor: 0
 --- !u!95 &2133927303 stripped
 Animator:
@@ -1110,10 +1140,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3824590344373101609, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -1.4739685
-      objectReference: {fileID: 0}
     - target: {fileID: 3824590344373101610, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1206,25 +1232,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameplayCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 3824590345051128007, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 3.382141
-      objectReference: {fileID: 0}
     - target: {fileID: 3824590345051128024, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 669775845}
-    - target: {fileID: 3824590345376018375, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 7.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3824590345376018392, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 568141713}
-    m_RemovedComponents:
-    - {fileID: 2863029038210289844, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
-    - {fileID: 1100479241915783661, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
 --- !u!1001 &5263170510754456975
 PrefabInstance:
