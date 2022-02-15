@@ -33,15 +33,15 @@ public class singleton : MonoBehaviour
     }
     public void dif1()
     {
-
+        diA = 0 + 1;
     }
     public void dif2()
     {
-
+        diA = 0 + 2;
     }
     public void dif3()
     {
-
+        diA = 0 + 3;
     }
 }
 

@@ -104,25 +104,25 @@ public class Swipe_Test2 : MonoBehaviour
             //swipe upwards
             if (currentSwipe2.y > 0 && currentSwipe2.x > -0.5f && currentSwipe2.x < 0.5f)
             {
-                Debug.Log("up swipe");
+            
                 uattack = true;
             }
             //swipe down
             if (currentSwipe2.y < 0 && currentSwipe2.x > -0.5f && currentSwipe2.x < 0.5f || Input.GetKeyDown(KeyCode.DownArrow))
             {
-                Debug.Log("down swipe");
+            
                 dattack = true;
             }
             //swipe left
             if (currentSwipe2.x < 0 && currentSwipe2.y > -0.5f && currentSwipe2.y < 0.5f || Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                Debug.Log("left swipe");
+              
                 lattack = true;
             }
             //swipe right
             if (currentSwipe2.x > 0 && currentSwipe2.y > -0.5f && currentSwipe2.y < 0.5f || Input.GetKeyDown(KeyCode.RightArrow))
             {
-                Debug.Log("right swipe");
+               
                 rattack = true;
             }
 
@@ -176,11 +176,12 @@ public class Swipe_Test2 : MonoBehaviour
 
         Vector3 position = target.transform.position;
 
-        Debug.Log("Breaker = " + breaker);
+     
         if (breaker == true)
         {
             attackd = Random.Range(1, 5);
-            Debug.Log("Apple");
+           
+            
         }
         {
 
@@ -188,7 +189,7 @@ public class Swipe_Test2 : MonoBehaviour
             if (attackd == 1)
             {
                 breaker = false;
-                Debug.Log("Go Left!");
+               
                 int gameStatusCount = FindObjectsOfType<Arrow>().Length;
 
                 if (gameStatusCount == 0)
@@ -209,7 +210,7 @@ public class Swipe_Test2 : MonoBehaviour
             else if (attackd == 2)
             {
                 breaker = false;
-                Debug.Log("Go Right!");
+               
                 int gameStatusCount = FindObjectsOfType<Arrow>().Length;
 
                 if (gameStatusCount == 0)
@@ -228,7 +229,7 @@ public class Swipe_Test2 : MonoBehaviour
             else if (attackd == 3)
             {
                 breaker = false;
-                Debug.Log("Go Up!");
+              
                 int gameStatusCount = FindObjectsOfType<Arrow>().Length;
 
                 if (gameStatusCount == 0)
@@ -247,7 +248,7 @@ public class Swipe_Test2 : MonoBehaviour
             else if (attackd == 4)
             {
                 breaker = false;
-                Debug.Log("Go Down!");
+                
                 int gameStatusCount = FindObjectsOfType<Arrow>().Length;
 
                 if (gameStatusCount == 0)

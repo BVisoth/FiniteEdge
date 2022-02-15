@@ -389,11 +389,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610d479a7d2858e43be7e7a716770f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &130809931 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8099689559672640585, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
-  m_PrefabInstance: {fileID: 1916926336}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &166759871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1266,22 +1261,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 924571767}
     - target: {fileID: 1916926339, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
-      propertyPath: sscount
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1916926339, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
-      propertyPath: atimeset
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1916926339, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
-      propertyPath: damageSFX
-      value: 
-      objectReference: {fileID: 8300000, guid: 7f825566c8744d44c9de1589abf939ee, type: 3}
-    - target: {fileID: 1916926339, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
-      propertyPath: MaxHitpoints
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 1916926339, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
       propertyPath: positions.Array.data[0]
       value: 
       objectReference: {fileID: 286363746}
@@ -1297,14 +1276,6 @@ PrefabInstance:
       propertyPath: positions.Array.data[3]
       value: 
       objectReference: {fileID: 1323043287}
-    - target: {fileID: 1916926340, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
-      propertyPath: hpBar
-      value: 
-      objectReference: {fileID: 924571767}
-    - target: {fileID: 1916926340, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 130809931}
     - target: {fileID: 3258145058729866177, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
       propertyPath: m_Name
       value: Slime boss
@@ -1353,8 +1324,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1916926340, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce45b15e5ed8893458a8281753b35132, type: 3}
 --- !u!1001 &2081798096
 PrefabInstance:

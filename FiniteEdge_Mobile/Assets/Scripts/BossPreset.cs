@@ -9,8 +9,11 @@ public class BossPreset : MonoBehaviour
     public float counter;
     public float acounter;
     static public int ran1;
-    public int randomnumberchosen = -1;
-    public int lastShot;
+    public int randomnumberchosen = 0;
+    public int lastShot = -1;
+    public int lastShot1 = -1;
+    public int lastShot2 = -1;
+    public int lastShot3 = -1;
     public Transform[] positions;
     public GameObject ball;
     public static float atime;
@@ -29,16 +32,16 @@ public class BossPreset : MonoBehaviour
     public static bool attk;
     public float wall;
     public bool wallc;
-
+    [SerializeField] public bool fireman = false;
     public float factor;
-
+    public bool shoot = true;
     // Start is called before the first frame update
     void Start()
     {
         atime = (atimeset / singleton.diA ) + 5;
         HitPoints = MaxHitpoints + (70 * singleton.diA);
         hpBar.SetHealth(HitPoints, MaxHitpoints);
-        Debug.Log("Current Hp: " + HitPoints);
+       
         MaxHitpoints = HitPoints;
     }
 
@@ -126,38 +129,62 @@ public class BossPreset : MonoBehaviour
         {
           factor = 0.08f * singleton.diA;
         }
-       
+       if (fireman == true)
+        {
+            Instantiate(ball, positions[0].position, Quaternion.identity);
+            Instantiate(ball, positions[3].position, Quaternion.identity);
+        }
         float ranfactor = Random.Range(0, factor);
         counter += Time.deltaTime;
-        if (counter >= 1.2 -(0.2f * singleton.diA) - ranfactor)
+        if (counter >= 1.4 - (0.2f * singleton.diA) - ranfactor)
         {
-            int rwall = Random.Range(0, 5);
-            counter = 0;
-            while (lastShot == randomnumberchosen)
+            if (fireman == false)
             {
-                randomnumberchosen = Random.Range(0, positions.Length);
+
+                counter = 0;
+                Instantiate(ball, positions[randomnumberchosen % positions.Length].position, Quaternion.identity);
+                Instantiate(ball, positions[(randomnumberchosen + 1) % positions.Length].position, Quaternion.identity);
+
+                int coinFlip = Random.Range(1, 3);
+                if (coinFlip == 1)
+                {
+                    randomnumberchosen -= 1;
+                    if (randomnumberchosen < 0)
+                    {
+                        randomnumberchosen += positions.Length;
+                    }
+                }
+                else
+                {
+                    randomnumberchosen += 1;
+                }
             }
-            lastShot = randomnumberchosen;
-            ran1 = randomnumberchosen;
-            Vector3 position = positions[randomnumberchosen].position;
-            Instantiate(ball, position, Quaternion.identity);
+            else
+            {
+
+                counter = 0.3f;
+                Instantiate(ball, positions[0].position, Quaternion.identity);
+                Instantiate(ball, positions[3].position, Quaternion.identity);
+
+               
+                if (shoot == true)
+                {
+
+                    Instantiate(ball, positions[1].position, Quaternion.identity);
+                    shoot = false;
+                }
+                else
+                {
+                    Instantiate(ball, positions[2].position, Quaternion.identity);
+                    shoot = true;
+                }
+            }
             scount = scount - 1;
-            if (rwall == 4 && lastShot ==1|| rwall == 4 && lastShot == 2)
-            {
-                wallc = true;
-            }
+            
+            Debug.Log(randomnumberchosen);
 
         }
-        if (wallc == true)
-        {
-            wall += Time.deltaTime;
-            if(wall>=1)
-            {
-                wallc = false;
-                Instantiate(ball, positions[1].position, Quaternion.identity);
-                Instantiate(ball, positions[2].position, Quaternion.identity);
-            }
-        }
+        
     }
     public void att()
     {
@@ -178,7 +205,7 @@ public class BossPreset : MonoBehaviour
         }
         hurting = true;
         hpBar.SetHealth(HitPoints, MaxHitpoints);
-        Debug.Log("Current Hp: " + HitPoints);
+       
         attk = false;
         if (HitPoints <= 0)
         {

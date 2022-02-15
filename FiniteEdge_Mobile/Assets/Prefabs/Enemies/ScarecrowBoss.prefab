@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3150189656400671548}
   - component: {fileID: 3150189656400671549}
   - component: {fileID: 3150189656400671546}
+  - component: {fileID: 2133927302}
   m_Layer: 0
   m_Name: ScarecrowBoss
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3150189656400671547}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.35, y: 0.05, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -102,3 +103,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2133927302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3150189656400671547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86f26295f44ad943be62fad92701872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageSFX: {fileID: 8300000, guid: 7f825566c8744d44c9de1589abf939ee, type: 3}
+  counter: 0
+  acounter: 0
+  randomnumberchosen: 0
+  lastShot: 0
+  lastShot1: -1
+  lastShot2: -1
+  lastShot3: -1
+  positions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  ball: {fileID: 6116289240136836486, guid: 29992fa036caa1643bfa876f12512856, type: 3}
+  atimeset: 8
+  sscount: 7
+  scount: 0
+  atimecheck: 0
+  scountcheck: 0
+  animator: {fileID: 3150189656400671546}
+  MaxHitpoints: 150
+  hpBar: {fileID: 0}
+  hurting: 0
+  htimer: 0
+  wall: 0
+  wallc: 0
+  factor: 0

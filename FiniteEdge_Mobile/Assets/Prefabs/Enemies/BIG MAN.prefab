@@ -119,8 +119,11 @@ MonoBehaviour:
   damageSFX: {fileID: 0}
   counter: 0
   acounter: 0
-  randomnumberchosen: -1
+  randomnumberchosen: 0
   lastShot: 0
+  lastShot1: 0
+  lastShot2: 0
+  lastShot3: 0
   positions:
   - {fileID: 0}
   - {fileID: 0}
@@ -137,6 +140,9 @@ MonoBehaviour:
   hpBar: {fileID: 0}
   hurting: 0
   htimer: 0
+  wall: 0
+  wallc: 0
+  factor: 0
 --- !u!114 &262694101
 MonoBehaviour:
   m_ObjectHideFlags: 0
