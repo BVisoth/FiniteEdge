@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3824590344373101612}
   - component: {fileID: 3824590344373101611}
   - component: {fileID: 3824590344373101610}
-  - component: {fileID: 2863029038210289844}
   m_Layer: 5
   m_Name: RightButton
   m_TagString: Untagged
@@ -34,10 +33,10 @@ RectTransform:
   m_Father: {fileID: 3824590344414466224}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.82725036, y: 0.06363391}
-  m_AnchorMax: {x: 1, y: 0.28863394}
-  m_AnchoredPosition: {x: -8.5, y: -1.473999}
-  m_SizeDelta: {x: -59, y: -17}
+  m_AnchorMin: {x: 0.79600006, y: 0.06848148}
+  m_AnchorMax: {x: 0.9423959, y: 0.2812963}
+  m_AnchoredPosition: {x: 2.5, y: 2}
+  m_SizeDelta: {x: -8, y: -4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3824590344373101612
 CanvasRenderer:
@@ -133,21 +132,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2863029038210289844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3824590344373101608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5644aa69dfcd6a842b47625655cc295e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  body: {fileID: 0}
-  dashSFX: {fileID: 0}
 --- !u!1 &3824590344414466236
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,10 +267,10 @@ RectTransform:
   m_Father: {fileID: 3824590344414466224}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.46, y: 0.8735858}
-  m_AnchorMax: {x: 0.5387509, y: 1}
-  m_AnchoredPosition: {x: 0.5, y: 3.3821106}
-  m_SizeDelta: {x: -14.764198, y: -6.7641983}
+  m_AnchorMin: {x: 0.46800002, y: 0.887}
+  m_AnchorMax: {x: 0.53152084, y: 1}
+  m_AnchoredPosition: {x: -0.5, y: -3.617859}
+  m_SizeDelta: {x: 15.235802, y: 7.2358017}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3824590345051128026
 CanvasRenderer:
@@ -394,7 +378,6 @@ GameObject:
   - component: {fileID: 3824590345376018394}
   - component: {fileID: 3824590345376018393}
   - component: {fileID: 3824590345376018392}
-  - component: {fileID: 1100479241915783661}
   m_Layer: 5
   m_Name: LeftButton
   m_TagString: Untagged
@@ -416,10 +399,10 @@ RectTransform:
   m_Father: {fileID: 3824590344414466224}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.04629287}
-  m_AnchorMax: {x: 0.15900001, y: 0.2712929}
-  m_AnchoredPosition: {x: 5, y: 7.5}
-  m_SizeDelta: {x: -47, y: -17}
+  m_AnchorMin: {x: 0.047458325, y: 0.08422222}
+  m_AnchorMax: {x: 0.1814375, y: 0.2951852}
+  m_AnchoredPosition: {x: 1, y: -1.5}
+  m_SizeDelta: {x: 1, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3824590345376018394
 CanvasRenderer:
@@ -515,18 +498,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1100479241915783661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3824590345376018374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5644aa69dfcd6a842b47625655cc295e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  body: {fileID: 0}
-  dashSFX: {fileID: 0}
