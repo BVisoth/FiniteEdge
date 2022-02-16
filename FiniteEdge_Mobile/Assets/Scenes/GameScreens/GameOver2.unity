@@ -216,7 +216,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -586,20 +586,32 @@ PrefabInstance:
       value: GameOverCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 4086370629394740605, guid: ddd2ecfcc5c6f5e4c8eabb0a824957c4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.65761113
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086370629394740605, guid: ddd2ecfcc5c6f5e4c8eabb0a824957c4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.9101112
       objectReference: {fileID: 0}
     - target: {fileID: 4086370629394740605, guid: ddd2ecfcc5c6f5e4c8eabb0a824957c4, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0.7784074
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086370629394740605, guid: ddd2ecfcc5c6f5e4c8eabb0a824957c4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0.79629517
       objectReference: {fileID: 0}
     - target: {fileID: 4086370629394740605, guid: ddd2ecfcc5c6f5e4c8eabb0a824957c4, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 134.52002
+      value: -7.4799805
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086370629394740605, guid: ddd2ecfcc5c6f5e4c8eabb0a824957c4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.4999695
       objectReference: {fileID: 0}
     - target: {fileID: 4086370629394740605, guid: ddd2ecfcc5c6f5e4c8eabb0a824957c4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -38
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4086370629671793483, guid: ddd2ecfcc5c6f5e4c8eabb0a824957c4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
