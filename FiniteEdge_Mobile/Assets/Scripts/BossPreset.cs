@@ -162,7 +162,7 @@ public class BossPreset : MonoBehaviour
             else
             {
                 scount = scount - 1;
-                counter = 0.6f;
+                counter = 0.7f;
                 Instantiate(ball, positions[0].position, Quaternion.identity);
                 Instantiate(ball, positions[3].position, Quaternion.identity);
 
