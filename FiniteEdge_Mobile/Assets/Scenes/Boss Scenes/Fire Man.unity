@@ -606,6 +606,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 64737597}
     - target: {fileID: 262694099, guid: 87e71a45c1e1a414380bc204be0fb728, type: 3}
+      propertyPath: fireman
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 262694099, guid: 87e71a45c1e1a414380bc204be0fb728, type: 3}
       propertyPath: sscount
       value: 15
       objectReference: {fileID: 0}
@@ -871,7 +875,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 454232844, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 4.0000305
+      value: 4.000061
       objectReference: {fileID: 0}
     - target: {fileID: 454232844, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_AnchoredPosition.y

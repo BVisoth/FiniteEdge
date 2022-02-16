@@ -136,11 +136,11 @@ public class BossPreset : MonoBehaviour
         }
         float ranfactor = Random.Range(0, factor);
         counter += Time.deltaTime;
-        if (counter >= 1.4 - (0.2f * singleton.diA) - ranfactor)
+        if (counter >= 1.6 - (0.2f * singleton.diA) - ranfactor)
         {
             if (fireman == false)
             {
-
+                scount = scount - 1;
                 counter = 0;
                 Instantiate(ball, positions[randomnumberchosen % positions.Length].position, Quaternion.identity);
                 Instantiate(ball, positions[(randomnumberchosen + 1) % positions.Length].position, Quaternion.identity);
@@ -161,15 +161,13 @@ public class BossPreset : MonoBehaviour
             }
             else
             {
-
-                counter = 0.3f;
+                scount = scount - 1;
+                counter = 0.6f;
                 Instantiate(ball, positions[0].position, Quaternion.identity);
                 Instantiate(ball, positions[3].position, Quaternion.identity);
 
-               
                 if (shoot == true)
                 {
-
                     Instantiate(ball, positions[1].position, Quaternion.identity);
                     shoot = false;
                 }
@@ -179,7 +177,7 @@ public class BossPreset : MonoBehaviour
                     shoot = true;
                 }
             }
-            scount = scount - 1;
+         
             
             Debug.Log(randomnumberchosen);
 

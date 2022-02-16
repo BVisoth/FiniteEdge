@@ -313,7 +313,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 454232844, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3.4985657
+      value: 3.4985962
       objectReference: {fileID: 0}
     - target: {fileID: 454232845, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_Sprite
@@ -1005,6 +1005,10 @@ PrefabInstance:
       propertyPath: hpBar
       value: 
       objectReference: {fileID: 380261068}
+    - target: {fileID: 2133927302, guid: af18a768698208a4dab84f2101f890f7, type: 3}
+      propertyPath: fireman
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2133927302, guid: af18a768698208a4dab84f2101f890f7, type: 3}
       propertyPath: positions.Array.data[0]
       value: 

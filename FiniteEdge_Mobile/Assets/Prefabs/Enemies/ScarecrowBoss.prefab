@@ -141,4 +141,6 @@ MonoBehaviour:
   htimer: 0
   wall: 0
   wallc: 0
+  fireman: 1
   factor: 0
+  shoot: 1
