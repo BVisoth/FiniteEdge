@@ -313,7 +313,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 454232844, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3.4985962
+      value: 3.4985352
+      objectReference: {fileID: 0}
+    - target: {fileID: 454232844, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6.7192383
       objectReference: {fileID: 0}
     - target: {fileID: 454232845, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_Sprite
@@ -322,6 +326,14 @@ PrefabInstance:
     - target: {fileID: 1639706189, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -38.000122
+      objectReference: {fileID: 0}
+    - target: {fileID: 1639706190, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 1639706190, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 7430182848248780053, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_AnchorMax.x
@@ -334,6 +346,10 @@ PrefabInstance:
     - target: {fileID: 7430182848248780053, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7430182849792207926, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 8.331055
       objectReference: {fileID: 0}
     - target: {fileID: 7430182850209218663, guid: 7acb5d90f5dcd464bbc5be3acb6c03d8, type: 3}
       propertyPath: m_Name
@@ -947,7 +963,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1084,7 +1100,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3824590344373101609, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.4739685
+      value: -1.473938
       objectReference: {fileID: 0}
     - target: {fileID: 3824590344373101610, guid: 9a3365248bafc2e4e80faaa2a01408d9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
